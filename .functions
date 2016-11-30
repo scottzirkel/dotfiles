@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# Make new dir & cd into it
+function mkcd {
+    if [ ! -n "$1" ]; then
+        echo "Enter a directory name"
+    elif [ -d $1 ]; then
+        echo "\`$1' already exists"
+    else
+        mkdir $1 && cd $1
+    fi
+}
+
+# Determine size of a file or total size of a directory
+function fs {
+    if du -b /dev/null > /dev/null 2>&1; then
+        local arg=-sbh;
+    else
+        local arg=-sh;
+    fi
+    if [[ -n "$1" ]]; then
+        du $arg -- "$1";
+    else
+        du $arg .[^.]* ./*;
+    fi;
+}
