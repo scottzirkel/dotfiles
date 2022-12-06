@@ -2,11 +2,11 @@
 
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
-[[ -f "$HOME/.aliases" ]] && rm -rf $HOME/.aliases
-ln -s $DOTFILES/zsh/.aliases $HOME/.aliases
+[[ -f "$HOME/.config/zsh" ]] && rm -rf $HOME/.config/zsh
+ln -s $DOTFILES/zsh/.config/ $HOME/.config/zsh
 
-[[ -f "$HOME/.functions" ]] && rm -rf $HOME/.functions
-ln -s $DOTFILES/zsh/.functions $HOME/.functions
+#[[ -f "$HOME/.functions" ]] && rm -rf $HOME/.functions
+#ln -s $DOTFILES/zsh/.functions $HOME/.functions
 
 [[ -f "$HOME/.zshrc" ]] && rm -rf $HOME/.zshrc
 ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
@@ -22,3 +22,7 @@ ln -s $DOTFILES/git/.czrc $HOME/.czrc
 
 [[ -f "$HOME/.gitignore_global" ]] && rm -rf $HOME/.gitignore_global
 ln -s $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
+
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+fi

@@ -2,9 +2,14 @@ if [ -f $HOME/Dropbox/dotfiles/.config/exercism/exercism_completion.zsh ]; then
   . $HOME/Dropbox/dotfiles/.config/exercism/exercism_completion.zsh
 fi
 
+#--------------------------------------------------------------------------------
+# Oh My Zsh
+#--------------------------------------------------------------------------------
+
 export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
+ZSH_CUSTOM=$HOME/.config/zsh
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
@@ -29,19 +34,62 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-for file in $HOME/dotfiles/.{aliases,functions}; do
-    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-done;
-unset file;
+#--------------------------------------------------------------------------------
+# Configuration
+#--------------------------------------------------------------------------------
+
+export KEYTIMEOUT=15
+
+typeset -U path cdpath fpath
+path=(
+    $HOME/.local/bin
+    $HOME/.config/composer/vendor/bin
+    $HOME/.n/bin
+    $HOME/.npm-packages/bin
+    ./vendor/bin
+    $path
+)
+
+setopt auto_cd
+cdpath=(
+    $HOME/code
+)
+
+zstyle ':completion:*' group-name ''
+zstyle ':completion:*:descriptions' format %d
+zstyle ':completion:*:descriptions' format %B%d%b
+zstyle ':completion:*:complete:(cd|pushd):*' tag-order \
+    'local-directories named-directories'
+
+export EDITOR=vim
+export GIT_EDITOR=vim
+export NVIM_LISTEN_ADDRESS=/tmp/nvimsocket
+export ARTISAN_OPEN_ON_MAKE_EDITOR=nvr
+export FZF_DEFAULT_COMMAND='ag -u -g ""'
+
+unsetopt sharehistory
+
+#--------------------------------------------------------------------------------
+# Aliases and Functions
+#--------------------------------------------------------------------------------
+
+#for file in $HOME/dotfiles/.{aliases,functions}; do
+#    [ -r "$file" ] && [ -f "$file" ] && source "$file";
+#done;
+#unset file;
+
+#--------------------------------------------------------------------------------
+# Miscellaneous
+#--------------------------------------------------------------------------------
 
 #I added this, but not sure if I need it...
 # export TERM=xterm-256color
 
-export PATH="$PATH:$HOME/.npm-packages/bin"
+#export PATH="$PATH:$HOME/.npm-packages/bin"
 
-export PATH="$PATH:$HOME/bin"
+#export PATH="$PATH:$HOME/bin"
 
-export PATH="$PATH:$HOME/.composer/vendor/bin"
+#export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 export COMPOSER_DISABLE_XDEBUG_WARN=1
 
