@@ -1,0 +1,19 @@
+[user]
+	email = scott@scottzirkel.com
+	name = Scott Zirkel
+[merge]
+	tool = code
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	a = add
+	cam = commit -am
+	cob = checkout -b
+	co = checkout
+[pull]
+	rebase = false
+[init]
+	defaultBranch = main
