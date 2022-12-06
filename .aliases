@@ -1,46 +1,76 @@
-alias vi="mvim -v"
-alias vim="mvim -g"
-alias vimrc="vim ~/.vimrc"
-alias zshrc="vim ~/.zshrc"
+# GIT
+alias g="git"
+alias gs="git status"
+alias gc="git commit"
+alias gco="git checkout"
+alias gcob="git checkout -b"
+alias nah='git reset --hard && git clean -df'
+alias wip='git add . && git commit -am "wip"'
+alias pushwip="wip && git push"
+
+# PHP
 alias artisan="php artisan"
 alias art="php artisan"
-alias artdump="artisan dump-autoload"
+alias a="php artisan"
+alias fresh="php artisan migrate:fresh --seed"
+alias refresh="php artisan migrate:refresh --seed"
+alias stan="vendor/bin/phpstan analyse --xdebug"
+alias tna="php artisan test && ./vendor/bin/phpstan analyse --xdebug"
 alias compdump="composer dump-autoload"
-alias fulldump="artdump && compdump"
 alias tinker="artisan tinker"
 alias homestead="php vendor/bin/homestead"
-alias gs="git status"
-alias gc="git commit -a -m"
 alias rocketeer="php rocketeer.phar"
-alias server="php -S 127.0.0.1:5220"
-alias tagnet="ssh tagnetdev@70.32.76.228"
-alias hosts="sudo vi /etc/hosts"
-alias phpunit="vendor/bin/phpunit"
 alias please="php please"
+alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
+alias clearphplog="rm -rf /opt/homebrew/var/log/php-fpm.log"
+
+alias vimrc="vim ~/.vimrc"
+alias zshrc="vim ~/.dotfiles/.zshrc"
+
+alias hosts="sudo vi /etc/hosts"
 alias docs='cd ~/Documents'
 alias dl='cd ~/Downloads'
-alias sb='cd ~/Development/sandbox'
-alias dev='cd ~/Development'
+alias storm='phpstorm'
+alias ll='ls -la'
 
-alias startphp='brew services start php70'
-alias stopphp='brew services stop php70'
-alias restartphp='brew services restart php70'
-#alias startapache='brew services start httpd24'
-#alias stopapache='brew services stop httpd24'
-#alias restartapache='brew services restart httpd24'
-alias startapache='sudo apachectl start'
-alias stopapache='sudo apachectl stop'
-alias restartapache='sudo apachectl -k restart'
-alias startmysql='brew servivces start mysql'
-alias stopmysql='brew services stop mysql'
-alias restartmysql='brew services restart mysql'
-alias startmongo='brew services start mongodb'
-alias stopmongo='brew services stop mongodb'
-alias restartmongo='brew services restart mongodb'
-alias dnsmasqstart='brew services start dnsmasq'
-alias dnsmasqstop='brew services stop dnsmasq'
-alias dnsmasqrestart='brew services restart dnsmasq'
+alias reload='source ~/.zshrc'
+alias vi=nvim
+alias vim=nvim
 
-alias wordpress='~/.custom/install-wp.sh'
+alias brewu='brew update && brew upgrade && brew cleanup && brew doctor'
+alias update="npm update --location=global && composer global update && brewu"
 
-alias brewu='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias killdsstore="find . -name '.DS_Store' -type f -delete"
+
+alias jigsaw='./vendor/bin/jigsaw'
+
+alias rebuilddb='rm -rf database/database.sqlite && touch database/database.sqlite && art migrate'
+
+# Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+# Flush Directory Service cache
+alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
+
+#NPM
+alias dev='npm run dev'
+alias watch='npm run watch'
+alias prod='npm run prod'
+
+alias sshconfig="vi ~/.ssh/config"
+
+alias optimizejpg="/Applications/ImageOptim.app/Contents/MacOS/ImageOptim *.jpg *.JPG"
+alias optimize="find . -name '*.jpg' -print0 -or -name '*.JPG' -print0 -or -name '*.JPEG' -print0 -or -name '*.png' -print0 -or -name '*.gif' -print0 | xargs -0 -L 100 /Applications/ImageOptim.app/Contents/MacOS/ImageOptim"
+
+# alias git=hub
+# alias vapor=vendor/bin/vapor
+
+alias pint='./vendor/bin/pint'
+
+alias sail='./vendor/bin/sail'
+alias sailor='sail art'
+
+alias switch80='valet use php80 && composer global update'
+alias switch81='valet use php81 && composer global update'
+alias switch74='valet use php74 && composer global update'
