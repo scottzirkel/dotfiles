@@ -70,37 +70,36 @@ export FZF_DEFAULT_COMMAND='ag -u -g ""'
 unsetopt sharehistory
 
 #--------------------------------------------------------------------------------
-# Aliases and Functions
-#--------------------------------------------------------------------------------
-
-#for file in $HOME/dotfiles/.{aliases,functions}; do
-#    [ -r "$file" ] && [ -f "$file" ] && source "$file";
-#done;
-#unset file;
-
-#--------------------------------------------------------------------------------
 # Miscellaneous
 #--------------------------------------------------------------------------------
 
-#I added this, but not sure if I need it...
-# export TERM=xterm-256color
+### Fix slowness of pastes with zsh-syntax-highlighting.zsh
+pasteinit() {
+    OLD_SELF_INSERT=${${(s.:.)widgets[self-insert]}[2,3]}
+    zle -N self-insert url-quote-magic
+}
+
+pastefinish() {
+    zle -N self-insert $OLD_SELF_INSERT
+}
+
+zstyle :bracketed-paste-magic paste-init pasteinit
+zstyle :bracketed-paste-magic pasate-finish pastefinish
+### Fix slowness of pastes
 
 #export PATH="$PATH:$HOME/.npm-packages/bin"
-
 #export PATH="$PATH:$HOME/bin"
-
 #export PATH="$PATH:$HOME/.composer/vendor/bin"
 
+export PGDATA=/usr/local/var/postgres
 export COMPOSER_DISABLE_XDEBUG_WARN=1
 
-export PGDATA=/usr/local/var/postgres
-
-export N_PREFIX=$HOME/.n
-export PATH=$N_PREFIX/bin:$PATH
+#export N_PREFIX=$HOME/.n
+#export PATH=$N_PREFIX/bin:$PATH
 #export PATH="$PATH:$HOME/.n/bin/node/bin"
 #export PATH="$PATH:$HOME/.n/bin/npm/bin"
 
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+#if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #NPM_PACKAGES=/Users/scott/.npm-packages
 #NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 #PATH="$NPM_PACKAGES/bin:$PATH"

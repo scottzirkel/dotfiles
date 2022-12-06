@@ -2,7 +2,7 @@
 
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
-[[ -f "$HOME/.config/zsh" ]] && rm -rf $HOME/.config/zsh
+[[ -d "$HOME/.config/zsh" ]] && rm -rf $HOME/.config/zsh
 ln -s $DOTFILES/zsh/.config/ $HOME/.config/zsh
 
 #[[ -f "$HOME/.functions" ]] && rm -rf $HOME/.functions
