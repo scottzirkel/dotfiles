@@ -3,13 +3,13 @@
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 [[ -f "$HOME/.aliases" ]] && rm -rf $HOME/.aliases
-ln -s $DOTFILES/.aliases $HOME/.aliases
+ln -s $DOTFILES/zsh/.aliases $HOME/.aliases
 
 [[ -f "$HOME/.functions" ]] && rm -rf $HOME/.functions
-ln -s $DOTFILES/.functions $HOME/.functions
+ln -s $DOTFILES/zsh/.functions $HOME/.functions
 
 [[ -f "$HOME/.zshrc" ]] && rm -rf $HOME/.zshrc
-ln -s $DOTFILES/.zshrc $HOME/.zshrc
+ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 
 [[ -d "$HOME/.config/nvim" ]] && rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
@@ -18,8 +18,8 @@ ln -s $DOTFILES/nvim $HOME/.config/nvim
 ln -s $DOTFILES/git/.gitconfig $HOME/.gitconfig
 
 [[ -f "$HOME/.czrc" ]] && rm -rf $HOME/.czrc
-ln -s $DOTFILES/.czrc $HOME/.czrc
+ln -s $DOTFILES/git/.czrc $HOME/.czrc
 
 [[ -d "$HOME/.fig/config" ]] && rm -rf $HOME/.fig/config
-ln -s $DOTFILES/.fig/config $HOME/.fig/config
+ln -s $DOTFILES/fig/config $HOME/.fig/config
 
