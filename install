@@ -4,3 +4,6 @@ DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
 rm -rf $HOME/.aliases
 ln -s $DOTFILES/.aliases $HOME/.aliases
+
+rm -rf $HOME/.czrc
+ln -s $DOTFILES/.czrc $HOME/.czrc
