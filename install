@@ -11,8 +11,8 @@ ln -s $DOTFILES/.functions $HOME/.functions
 [[ -f "$HOME/.czrc" ]] && rm -rf $HOME/.czrc
 ln -s $DOTFILES/.czrc $HOME/.czrc
 
-[[ -d "$HOME/.fig" ]] && rm -rf $HOME/.fig
-ln -s $DOTFILES/.fig $HOME/.fig
+[[ -d "$HOME/.fig/config" ]] && rm -rf $HOME/.fig/config
+ln -s $DOTFILES/.fig/config $HOME/.fig/config
 
 
 
