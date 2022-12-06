@@ -20,4 +20,5 @@ ln -s $DOTFILES/git/.gitconfig $HOME/.gitconfig
 [[ -f "$HOME/.czrc" ]] && rm -rf $HOME/.czrc
 ln -s $DOTFILES/git/.czrc $HOME/.czrc
 
-
+[[ -f "$HOME/.gitignore_global" ]] && rm -rf $HOME/.gitignore_global
+ln -s $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
