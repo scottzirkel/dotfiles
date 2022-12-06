@@ -1,0 +1,77 @@
+[2m2022-11-03T16:25:26.786945Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T16:26:27.368263Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T16:33:13.165611Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T16:57:47.420970Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T16:57:54.587020Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T17:11:45.511702Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T17:11:49.267066Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T17:11:55.980855Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T17:13:06.498651Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:13.515909Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T20:05:14.442333Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:16.362306Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:24.128516Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:26.727856Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:52.626258Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:56.731843Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:05:59.528303Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:09:24.720750Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:09:43.075481Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:12:02.745413Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:12:54.936196Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:13:40.871061Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:14:03.285586Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:14:50.222691Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:16:17.281347Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:16:29.843234Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:17:29.708289Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:17:52.065534Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:18:07.569818Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:18:26.761245Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:18:33.226380Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:21:04.153043Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T20:21:04.759858Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:21:07.870000Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:21:16.701914Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:21:20.006711Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:21:51.524973Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:22:02.207799Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:22:06.378304Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:37:53.024704Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T20:38:38.052503Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:38:55.445203Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T20:39:15.065835Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:37:11.151230Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T21:37:20.086116Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:40:10.521604Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:56:30.151184Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T21:56:31.539531Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:56:52.879017Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:57:28.043385Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T21:57:38.852717Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:01:25.870152Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:01:29.154393Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:05:30.459980Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:05:34.060203Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:05:39.084948Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:05:46.224310Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:05:49.149368Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:06:32.698740Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-03T22:06:32.698777Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-03T22:06:58.667785Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T00:07:31.178974Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T02:27:48.070212Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T14:30:09.637461Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T14:30:16.569714Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:34:06.959755Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:34:44.537882Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:34:56.944391Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:39:56.951261Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:40:19.173840Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T14:40:23.877567Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:40:29.507935Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:40:54.583289Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:41:11.092922Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:41:22.080718Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:41:28.075249Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-04T14:41:58.146044Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time

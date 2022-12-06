@@ -1,0 +1,5 @@
+[2m2022-11-04T00:07:31.040020Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T02:27:47.994653Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T19:59:33.159037Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)
+[2m2022-11-04T19:59:53.202147Z[0m [31mERROR[0m [2mfigterm::history[0m[2m:[0m [2m39:[0m Failed to insert command into history: table history has no column named time
+[2m2022-11-07T22:18:08.043979Z[0m [31mERROR[0m [2mfigterm::ipc[0m[2m:[0m [2m299:[0m Failed to send message [3merr[0m[2m=[0mBroken pipe (os error 32)

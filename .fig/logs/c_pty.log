@@ -1,0 +1,962 @@
+set +m +b +o history
+
+unset HISTFILE
+
+export PATH='/usr/sbin:/sbin:/opt/homebrew/bin:/usr/local/bin:/bin:/usr/bin'
+
+export HOME=/Users/scott
+
+
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ set +m +b +o history
+bash-3.2$ 
+bash-3.2$ unset HISTFILE
+bash-3.2$ 
+bash-3.2$ export PATH='/usr/sbin:/sbin:/opt/homebrew/bin:/usr/local/bin:/bin:/us r/bin'
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 43219
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 5.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/75.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 75 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/75 $? ; } &
+[2] 44310
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 90891
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 91415
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 9165
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 9748
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 22052
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 22642
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 32905
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 33491
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12350
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 12743
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 38820
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 39193
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 16987
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 17554
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 35164
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 35743
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12995
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 13562
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 22961
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 23539
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 23509
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 24091
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 78033
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 78598
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 32986
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 33559
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 86871
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 87447
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 26336
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 26901
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 77367
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 77941
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 9877
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 10441
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 60771
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 61347
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12420
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 12999
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 52696
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 53219
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 26478
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 26987
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 84534
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 85094
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 37713
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 38250
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && composer list --format=json |  cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/622.stdout 2> /var/fo lders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/622.stderr; '/Applications/Fig.app/Con tents/MacOS/fig-darwin-universal' _ callback 622 /var/folders/0l/dvbmg_qx6td7vw9 f5406q8500000gn/T/622 $? ; } &
+[3] 41909
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && file symfony.lock | cat ) 1>  /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/623.stdout 2> /var/folders/0l/d vbmg_qx6td7vw9f5406q8500000gn/T/623.stderr; '/Applications/Fig.app/Contents/MacO S/fig-darwin-universal' _ callback 623 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500 000gn/T/623 $? ; } &
+[4] 41988
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && cat composer.json | cat ) 1>  /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/624.stdout 2> /var/folders/0l/d vbmg_qx6td7vw9f5406q8500000gn/T/624.stderr; '/Applications/Fig.app/Contents/MacO S/fig-darwin-universal' _ callback 624 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500 000gn/T/624 $? ; } &
+[5] 42006
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 60119
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/67.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/67.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 67 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/67 $? ; } &
+[2] 60746
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/8 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/84.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 84 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/84 $? ; } &
+[3] 61128
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 97637
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 3.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/73.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 73 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/73 $? ; } &
+[2] 98136
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 95736
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 96328
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 42881
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 43400
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 20697
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 21261
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 57497
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 58080
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 artisan | cat ) 1> /var /folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/429.stdout 2> /var/folders/0l/dvbmg _qx6td7vw9f5406q8500000gn/T/429.stderr; '/Applications/Fig.app/Contents/MacOS/fi g-darwin-universal' _ callback 429 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000g n/T/429 $? ; } &
+[3] 40465
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 please | cat ) 1> /var/ folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/430.stdout 2> /var/folders/0l/dvbmg_ qx6td7vw9f5406q8500000gn/T/430.stderr; '/Applications/Fig.app/Contents/MacOS/fig -darwin-universal' _ callback 430 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn /T/430 $? ; } &
+[4] 40475
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 bin/console | cat ) 1>  /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/431.stdout 2> /var/folders/0l/d vbmg_qx6td7vw9f5406q8500000gn/T/431.stderr; '/Applications/Fig.app/Contents/MacO S/fig-darwin-universal' _ callback 431 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500 000gn/T/431 $? ; } &
+[5] 40489
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && php artisan list --format=jso n | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/432.stdout 2> /var /folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/432.stderr; '/Applications/Fig.app/ Contents/MacOS/fig-darwin-universal' _ callback 432 /var/folders/0l/dvbmg_qx6td7 vw9f5406q8500000gn/T/432 $? ; } &
+[6] 40500
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 artisan | cat ) 1> /var /folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/436.stdout 2> /var/folders/0l/dvbmg _qx6td7vw9f5406q8500000gn/T/436.stderr; '/Applications/Fig.app/Contents/MacOS/fi g-darwin-universal' _ callback 436 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000g n/T/436 $? ; } &
+[7] 40827
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 please | cat ) 1> /var/ folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/437.stdout 2> /var/folders/0l/dvbmg_ qx6td7vw9f5406q8500000gn/T/437.stderr; '/Applications/Fig.app/Contents/MacOS/fig -darwin-universal' _ callback 437 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn /T/437 $? ; } &
+[8] 40832
+bash-3.2$ 
+bash-3.2$ { ( cd /Users/scott/code/core-funnels && ls -1 bin/console | cat ) 1>  /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/438.stdout 2> /var/folders/0l/d vbmg_qx6td7vw9f5406q8500000gn/T/438.stderr; '/Applications/Fig.app/Contents/MacO S/fig-darwin-universal' _ callback 438 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500 000gn/T/438 $? ; } &
+[9] 40842
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 65339
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 65943
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12641
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 13240
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 27266
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 27849
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 98855
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 99435
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 96814
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 97411
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 69664
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 70246
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 79163
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 79696
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 91092
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 91649
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 8654
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 9174
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 80421
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 80830
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 95142
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 2.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/72.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 72 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/72 $? ; } &
+[2] 95521
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 63386
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 63955
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 36217
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 36795
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 97610
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 98173
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 97510
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 98072
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 91056
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 91539
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 79277
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 79859
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 49574
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 50167
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 36995
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 37550
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12756
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 13331
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 1403
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 1977
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 92014
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 92593
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 69674
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 70232
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 46945
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 47520
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 31133
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 31692
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 28 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 55039
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 55596
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 75613
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 76130
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 15070
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 15675
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 77824
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 78301
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 59206
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 59789
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 16521
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 17122
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/29.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 29 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29 $? ; } &
+[1] 81862
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 82454
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/29.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 29 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29 $? ; } &
+[1] 66349
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 66741
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 61773
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 62371
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 40049
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 40639
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 27363
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 27948
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( fig --version ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/ T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30.stderr; '/App lications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 30 /var/folder s/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 12071
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 12610
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 62379
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 62957
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 62380
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 62968
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 63397
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 63985
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 30069
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 30643
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 5023
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 5562
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 89998
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 90551
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 36715
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 37283
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 67328
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 67900
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 81498
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 82057
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 33084
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 33600
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/28.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 2 8 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/28 $? ; } &
+[1] 23981
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 24539
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 48462
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 49038
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 56313
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 56830
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 27012
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 27474
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 4112
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 4683
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 89117
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 89648
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 82806
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 83317
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 82181
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 82693
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 90047
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 90597
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 16395
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 16994
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 34359
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 34928
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 26387
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 26823
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 87863
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 88540
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 54036
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 1.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/71.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 71 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/71 $? ; } &
+[2] 54633
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/29.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 2 9 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29 $? ; } &
+[1] 9756
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 10369
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 17842
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 18354
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/27.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/27. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 2 7 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/27 $? ; } &
+[1] 81140
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 81626
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/29.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 2 9 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/29 $? ; } &
+[1] 79516
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 80119
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 6647
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 7248
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 48483
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 49005
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 48414
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 49008
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 6064
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 6657
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 58771
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 59307
+bash-3.2$ 
+bash-3.2$ export HOME=/Users/scott
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ { ( cd  && fig --version | cat ) 1> /var/folders/0l/dvbmg_qx6td7vw9f54 06q8500000gn/T/30.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30. stderr; '/Applications/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 3 0 /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/30 $? ; } &
+[1] 46902
+bash-3.2$ 
+bash-3.2$ { ( which fish ) 1> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/7 4.stdout 2> /var/folders/0l/dvbmg_qx6td7vw9f5406q8500000gn/T/74.stderr; '/Applic ations/Fig.app/Contents/MacOS/fig-darwin-universal' _ callback 74 /var/folders/0 l/dvbmg_qx6td7vw9f5406q8500000gn/T/74 $? ; } &
+[2] 47442
+bash-3.2$ 
+bash-3.2$ 

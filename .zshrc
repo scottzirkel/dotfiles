@@ -31,7 +31,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 #NPM_PACKAGES=/Users/scott/.npm-packages
 #NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 #PATH="$NPM_PACKAGES/bin:$PATH"
-setopt NO_glob_assign
+#setopt NO_glob_assign
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

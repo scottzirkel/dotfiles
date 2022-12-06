@@ -1,0 +1,13 @@
+{
+  "app.launchOnStartup": false,
+  "autocomplete.theme": "github-dark",
+  "insertCommonPrefixOrNavigateDown": [
+    "autocomplete.keybindings.tab"
+  ],
+  "insertSelected": [
+    "autocomplete.keybindings.tab"
+  ],
+  "integrations.iterm.disabled": true,
+  "integrations.terminal.disabled": true,
+  "integrations.vscode.disabled": true
+}

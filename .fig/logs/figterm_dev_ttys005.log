@@ -1,0 +1,1 @@
+[2m2022-12-05T17:04:05.745281Z[0m [31mERROR[0m [2mfig_ipc::unix_socket[0m[2m:[0m [2m21:[0m Failed to connect [3merr[0m[2m=[0mNo such file or directory (os error 2) [3msocket[0m[2m=[0m"/var/tmp/fig/scott/secure.socket"
