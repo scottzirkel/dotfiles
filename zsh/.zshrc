@@ -1,5 +1,3 @@
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zshrc.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.pre.zsh"
 if [ -f $HOME/Dropbox/dotfiles/.config/exercism/exercism_completion.zsh ]; then
   . $HOME/Dropbox/dotfiles/.config/exercism/exercism_completion.zsh
 fi
@@ -41,6 +39,3 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 fpath=($fpath "/Users/scott/.zfunctions")
 
 eval "$(starship init zsh)"
-
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zshrc.post.zsh" ]] && builtin source "$HOME/.fig/shell/zshrc.post.zsh"

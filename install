@@ -20,6 +20,4 @@ ln -s $DOTFILES/git/.gitconfig $HOME/.gitconfig
 [[ -f "$HOME/.czrc" ]] && rm -rf $HOME/.czrc
 ln -s $DOTFILES/git/.czrc $HOME/.czrc
 
-[[ -d "$HOME/.fig/config" ]] && rm -rf $HOME/.fig/config
-ln -s $DOTFILES/fig/config $HOME/.fig/config
 
