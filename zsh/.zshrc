@@ -13,13 +13,10 @@ ZSH_CUSTOM=$HOME/.config/zsh
 HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 HIST_STAMPS="yyyy-mm-dd"
-VI_MODE_SET_CURSOR=true
-VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 
 plugins=(
     artisan
     npm
-    vi-mode
     composer
     cp
     dnf
