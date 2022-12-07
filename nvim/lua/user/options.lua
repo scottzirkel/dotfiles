@@ -42,3 +42,11 @@ vim.opt.showmode = false
 vim.opt.updatetime = 4001 -- Set updatime to 1ms longer than the default to prevent polyglot from changing it
 vim.opt.redrawtime = 10000 -- Allow more time for loading syntax on large files
 vim.opt.formatoptions:append { 'r' }
+
+-- Highlights
+vim.opt.cursorline = true
+vim.opt.termguicolors = true
+vim.opt.winblend = 0
+vim.opt.wildoptions = 'pum'
+vim.pumblend = 5
+vim.opt.background = 'dark'

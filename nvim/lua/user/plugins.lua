@@ -1,68 +1,40 @@
--- Install packer
-local ensure_packer = function ()
-    local fn = vim.fn
-    local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-    if fn.empty(fn.glob(install_path)) > 0 then
-        fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-        vim.cmd [[packadd packer.nvim]]
-        return true
-    end
-    return false
+local status, packer = pcall(require, "packer")
+if (not status) then
+  print("Packer is not installed")
+  return
 end
 
-local packer_bootstrap = ensure_packer()
+vim.cmd [[packadd packer.nvim]]
 
--- Initialize packer
-require('packer').init({
-  compile_path = vim.fn.stdpath('data')..'/site/plugin/packer_compiled.lua',
-  display = {
-    open_fn = function()
-      return require('packer.util').float({ border = 'solid' })
-    end,
-  },
-})
+packer.startup(function (use)
+  use 'wbthomason/packer.nvim' -- to self manage
+  use 'nvim-lualine/lualine.nvim' -- Statusline
+  
+    use({
+    'projekt0n/github-nvim-theme',
+    config = function()
+      require("github-theme").setup({
+        theme_style = "dark",
+        function_style = "italic",
+        sidebars = {"qf", "vista_kind", "terminal", "packer"},
 
--- Install plugins
-local use = require('packer').use
+        -- Change the "hint" color to the "orange" color, and make the "error" color bright red
+        colors = {hint = "orange", error = "#ff0000"},
 
-use('wbthomason/packer.nvim') -- Let packer manage itself
+        -- Overwrite the highlight groups
+        overrides = function(c)
+          return {
+            htmlTag = {fg = c.red, bg = "#282c34", sp = c.hint, style = "underline"},
+            DiagnosticHint = {link = "LspDiagnosticsDefaultHint"},
+            -- this will remove the highlight groups
+            TSField = {},
+          }
+        end
+      })
+    end })
 
-use('tpope/vim-sleuth')
-
-use({
-  'jessarcher/onedark.nvim',
-  config = function()
-    vim.cmd('colorscheme onedark')
-
-    -- Hide the characters in FloatBorder
-    vim.api.nvim_set_hl(0, 'FloatBorder', {
-      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-    })
-
-    -- Make the StatusLineNonText background the same as StatusLine
-    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
-      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
-    })
-
-    -- Hide the characters in CursorLineBg
-    vim.api.nvim_set_hl(0, 'CursorLineBg', {
-      fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-      bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-    })
-
-    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
-    vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
-  end,
-})
-
-use({
-  'phpactor/phpactor',
-  branch = 'master',
-  ft = 'php',
-  run = 'composer install --no-dev -o',
-  config = function()
-    require('user.plugins.phpactor')
-  end,
-})
+    -- Automatically bootstrap plugins
+  if packer_bootstrap then
+    require('packer').sync()
+  end
+  end)
