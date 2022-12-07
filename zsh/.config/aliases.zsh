@@ -22,7 +22,20 @@ alias homestead="php vendor/bin/homestead"
 alias rocketeer="php rocketeer.phar"
 alias please="php please"
 alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
+alias cr='composer require'
+alias co='composer outdated --direct'
+alias ci='composer install'
+alias ct='composer test'
+alias cl='composer lint'
+alias ca='composer analyse'
 alias clearphplog="rm -rf /opt/homebrew/var/log/php-fpm.log"
+
+# Stupid
+alias shrug="echo '¯\_(ツ)_/¯' | pbcopy";
+alias fight="echo '(ง'̀-'́)ง' | pbcopy";
+
+# MISC
+alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
@@ -31,7 +44,13 @@ alias hosts="sudo vi /etc/hosts"
 alias docs='cd ~/Documents'
 alias dl='cd ~/Downloads'
 alias storm='phpstorm'
-alias ll='ls -la'
+
+# Directories
+alias ll='ls -FGlAhp'
+alias ..="cd ../"
+alias ...="cd ../../"
+alias ....="cd ../../../"
+alias .....="cd ../../../../"
 
 alias reload='source ~/.zshrc'
 alias vi=nvim
