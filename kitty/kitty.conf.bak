@@ -1,0 +1,16 @@
+font_family CaskaydiaCove Nerd Font Mono Regular
+bold_font CaskaydiaCove Nerd Font Mono Bold
+bold_italic_font CaskaydiaCove Nerd Font Mono Bold Italic
+italic_font CaskaydiaCove Nerd Font Mono Italic
+
+font_size 15
+adjust_line_height 175%
+
+cursor_blink_interval 0
+window_padding_width 10
+hide_window_decorations yes
+remember_window_size yes
+initial_window_width 1680
+initial_window_height 1200
+enable_audio_bell no
+
