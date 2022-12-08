@@ -85,6 +85,17 @@ use({
   tag = 'nightly'
 })
 
+
+use({
+  'phpactor/phpactor',
+  branch = 'master',
+  ft = 'php',
+  run = 'composer install --no-dev -o',
+  config = function()
+    require('user.plugins.phpactor')
+  end,
+})
+
 -- Automatically bootstrap plugins
 if packer_bootstrap then
   require('packer').sync()
