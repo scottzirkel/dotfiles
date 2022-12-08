@@ -26,6 +26,9 @@ ln -s $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
 [[ -f "$HOME/.config/kitty" ]] && rm -rf $HOME/.config/kitty
 ln -s $DOTFILES/kitty $HOME/.config/kitty
 
+[[ -f "$HOME/.config/tmux" ]] && rm -rf $HOME/.config/tmux
+ln -s $DOTFILES/tmux $HOME/.config/tmux
+
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
