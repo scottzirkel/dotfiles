@@ -2,33 +2,37 @@
 
 DOTFILES=$(cd $(dirname "${BASH_SOURCE[0]}") && pwd)
 
-[[ -d "$HOME/.config/zsh" ]] && rm -rf $HOME/.config/zsh
+[[ ! -d $HOME/.config ]] && mkdir $HOME/.config
+
+rm -rf $HOME/.config/zsh
 ln -s $DOTFILES/zsh/.config/ $HOME/.config/zsh
 
-#[[ -f "$HOME/.functions" ]] && rm -rf $HOME/.functions
-#ln -s $DOTFILES/zsh/.functions $HOME/.functions
-
-[[ -f "$HOME/.zshrc" ]] && rm -rf $HOME/.zshrc
+rm -rf $HOME/.zshrc
 ln -s $DOTFILES/zsh/.zshrc $HOME/.zshrc
 
-[[ -d "$HOME/.config/nvim" ]] && rm -rf $HOME/.config/nvim
+rm -rf $HOME/.config/nvim
 ln -s $DOTFILES/nvim $HOME/.config/nvim
 
-[[ -f "$HOME/.gitconfig" ]] && rm -rf $HOME/.gitconfig
+rm -rf $HOME/.gitconfig
 ln -s $DOTFILES/git/.gitconfig $HOME/.gitconfig
 
-[[ -f "$HOME/.czrc" ]] && rm -rf $HOME/.czrc
+rm -rf $HOME/.czrc
 ln -s $DOTFILES/git/.czrc $HOME/.czrc
 
-[[ -f "$HOME/.gitignore_global" ]] && rm -rf $HOME/.gitignore_global
+rm -rf $HOME/.gitignore_global
 ln -s $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
 
-[[ -f "$HOME/.config/kitty" ]] && rm -rf $HOME/.config/kitty
+rm -rf $HOME/.config/kitty
 ln -s $DOTFILES/kitty $HOME/.config/kitty
 
-[[ -f "$HOME/.config/tmux" ]] && rm -rf $HOME/.config/tmux
-ln -s $DOTFILES/tmux $HOME/.config/tmux
+rm -rf $HOME/.tmux.conf
+ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
+[[ ! -d $HOME/.local/bin ]] && mkdir -p $HOME/.local/bin
+
+rm -rf $HOME/.local/bin/t
+ln -s $DOTFILES/scripts/t $HOME/.local/bin/t
+
+if [ ! -d $HOME/.oh-my-zsh ]; then
     KEEP_ZSHRC=yes sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi

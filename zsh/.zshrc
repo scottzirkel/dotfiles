@@ -37,11 +37,15 @@ source $ZSH/oh-my-zsh.sh
 
 export KEYTIMEOUT=15
 
+export N_PREFIX=$HOME/.n
+
 typeset -U path cdpath fpath
 path=(
     $HOME/.local/bin
     $HOME/.config/composer/vendor/bin
     $HOME/.n/bin
+    $HOME/.n/bin/node/bin
+    $HOME/.n/bin/npm/bin
     $HOME/.npm-packages/bin
     ./vendor/bin
     $path
