@@ -52,6 +52,8 @@ use({
   end
 })
 
+use('kyazdani42/nvim-web-devicons') -- File icons
+
 use({
   'tpope/vim-fugitive',
   requires = 'tpope/vim-rhubarb',
@@ -82,11 +84,10 @@ use({
   'neovim/nvim-lspconfig',
   requires = {
     'b0o/schemastore.nvim',
-    'folke/lsp-colors.nvim'
-  },
-  config = function()
-    require('user.plugins.lspconfig')
-  end
+    'folke/lsp-colors.nvim',
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim'
+  }
 }) -- LSP
 
 use({
@@ -98,13 +99,7 @@ use({
 
 use('windwp/nvim-ts-autotag')
 
---use({
---  'akinsho/bufferline.nvim',
---  requires = 'kyazdani42/nvim-web-devicons',
---  config = function()
---    require('user.plugins.bufferline')
---  end,
---})
+use('akinsho/bufferline.nvim')
 
 use({
   'nvim-lualine/lualine.nvim',
@@ -150,9 +145,6 @@ use({
   branch = 'master',
   ft = 'php',
   run = 'composer install --no-dev -o',
-  config = function()
-    require('user.plugins.phpactor')
-  end,
 })
 
 -- Automatically bootstrap plugins
