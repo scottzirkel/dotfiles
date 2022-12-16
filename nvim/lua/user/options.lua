@@ -29,12 +29,12 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 vim.opt.scrolloff = 8
 vim.opt.sidescrolloff = 8
-vim.opt.clipboard = 'unnamedplus' -- Use Linux system clipboard
+vim.opt.clipboard = 'unnamedplus' -- Use system clipboard
 vim.opt.confirm = true -- ask for confirmation instead of erroring
 vim.opt.undofile = true -- persistent undo
 vim.opt.backup = true -- automatically save a backup file
 vim.opt.backupdir:remove('.') -- keep backups out of the current directory
-vim.opt.shortmess:append({ I = true }) -- disable the splash screen
+--vim.opt.shortmess:append({ I = true }) -- disable the splash screen
 vim.opt.wildmode = 'longest:full,full' -- complete the longest common match, and allow tabbing the results to fully complete them
 vim.opt.wildignore:append { '*/node_modules/*' }
 vim.opt.signcolumn = 'yes:2'

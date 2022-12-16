@@ -34,20 +34,10 @@ use({
     require("github-theme").setup({
       theme_style = "dimmed",
       function_style = "italic",
-      sidebars = { "qf", "vista_kind", "terminal", "packer" },
-
+      variable_style = "italic",
+      --      sidebars = { "qf", "vista_kind", "terminal", "packer" },
       -- Change the "hint" color to the "orange" color, and make the "error" color bright red
       colors = { hint = "orange", error = "#ff0000" },
-
-      -- Overwrite the highlight groups
-      overrides = function(c)
-        return {
-          htmlTag = { fg = c.red, bg = "#282c34", sp = c.hint, style = "underline" },
-          DiagnosticHint = { link = "LspDiagnosticsDefaultHint" },
-          -- this will remove the highlight groups
-          TSField = {},
-        }
-      end
     })
   end
 })
@@ -90,12 +80,7 @@ use({
   }
 }) -- LSP
 
-use({
-  'windwp/nvim-autopairs',
-  config = function()
-    require('nvim-autopairs').setup()
-  end,
-})
+use('windwp/nvim-autopairs')
 
 use('windwp/nvim-ts-autotag')
 
@@ -146,6 +131,8 @@ use({
   ft = 'php',
   run = 'composer install --no-dev -o',
 })
+
+--use('glepnir/dashboard-nvim')
 
 -- Automatically bootstrap plugins
 if packer_bootstrap then
