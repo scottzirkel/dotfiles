@@ -30,33 +30,37 @@ use('tpope/vim-sleuth') -- Indent autodetection with editorconfig support
 
 --use('projekt0n/github-nvim-theme')
 
-use({
-  'jessarcher/onedark.nvim',
-  config = function()
-    vim.cmd('colorscheme onedark')
+-- use('navarasu/onedark.nvim')
 
-    -- Hide the characters in FloatBorder
-    vim.api.nvim_set_hl(0, 'FloatBorder', {
-      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
-    })
+use('shaunsingh/nord.nvim')
 
-    -- Make the StatusLineNonText background the same as StatusLine
-    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
-      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
-      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
-    })
+--use({
+--  'jessarcher/onedark.nvim',
+--  config = function()
+--    vim.cmd('colorscheme onedark')
 
-    -- Hide the characters in CursorLineBg
-    vim.api.nvim_set_hl(0, 'CursorLineBg', {
-      fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-      bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
-    })
+-- Hide the characters in FloatBorder
+--    vim.api.nvim_set_hl(0, 'FloatBorder', {
+--      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
+--      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
+--    })
 
-    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
-    vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
-  end,
-})
+-- Make the StatusLineNonText background the same as StatusLine
+--    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
+--      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
+--      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
+--    })
+
+-- Hide the characters in CursorLineBg
+--   vim.api.nvim_set_hl(0, 'CursorLineBg', {
+--     fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+--     bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+--   })
+
+--   vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
+--   vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
+-- end,
+--})
 
 use('kyazdani42/nvim-web-devicons') -- File icons
 
@@ -118,7 +122,7 @@ use({
 
 use({
   'nvim-treesitter/nvim-treesitter',
-  commit = '4cccb6f494eb255b32a290d37c35ca12584c74d0',
+  --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0',
   run = ':TSUpdate',
   requires = {
     'nvim-treesitter/playground',
