@@ -46,4 +46,5 @@ Thumbs.db
 .aspera
 .cache
 .dropbox
-nvim/pack/**/.git
+nvim/pack
+.idea

@@ -28,34 +28,51 @@ local use = require('packer').use
 use('wbthomason/packer.nvim') -- to self manage
 use('tpope/vim-sleuth') -- Indent autodetection with editorconfig support
 
+--use('projekt0n/github-nvim-theme')
+
 use({
-  'projekt0n/github-nvim-theme',
+  'jessarcher/onedark.nvim',
   config = function()
-    require("github-theme").setup({
-      theme_style = "dimmed",
-      function_style = "italic",
-      variable_style = "italic",
-      --      sidebars = { "qf", "vista_kind", "terminal", "packer" },
-      -- Change the "hint" color to the "orange" color, and make the "error" color bright red
-      colors = { hint = "orange", error = "#ff0000" },
+    vim.cmd('colorscheme onedark')
+
+    -- Hide the characters in FloatBorder
+    vim.api.nvim_set_hl(0, 'FloatBorder', {
+      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
+      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
     })
-  end
+
+    -- Make the StatusLineNonText background the same as StatusLine
+    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
+      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
+      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
+    })
+
+    -- Hide the characters in CursorLineBg
+    vim.api.nvim_set_hl(0, 'CursorLineBg', {
+      fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+      bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
+    })
+
+    vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
+    vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
+  end,
 })
 
 use('kyazdani42/nvim-web-devicons') -- File icons
 
-use({
-  'tpope/vim-fugitive',
-  requires = 'tpope/vim-rhubarb',
-  cmd = 'G',
-})
+use('glepnir/lspsaga.nvim') -- LSP UI
+
+--use({
+--  'tpope/vim-fugitive',
+--  requires = 'tpope/vim-rhubarb',
+--  cmd = 'G',
+--})
 
 use('L3MON4D3/LuaSnip')
 
 use({
   'hrsh7th/nvim-cmp',
   requires = {
-    'L3MON4D3/LuaSnip',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-nvim-lsp',
@@ -70,13 +87,14 @@ use({
   --  end,
 })
 
+use('williamboman/mason.nvim')
+use('williamboman/mason-lspconfig.nvim')
+
 use({
   'neovim/nvim-lspconfig',
   requires = {
     'b0o/schemastore.nvim',
     'folke/lsp-colors.nvim',
-    'williamboman/mason.nvim',
-    'williamboman/mason-lspconfig.nvim'
   }
 }) -- LSP
 
@@ -85,26 +103,35 @@ use('windwp/nvim-autopairs')
 use('windwp/nvim-ts-autotag')
 
 use('akinsho/bufferline.nvim')
+use('norcalli/nvim-colorizer.lua')
+
+use('lewis6991/gitsigns.nvim')
+
+use('dinhhuy258/git.nvim') -- For git blame & browse
 
 use({
   'nvim-lualine/lualine.nvim',
-  requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-  config = function()
-    require('user.plugins.lualine')
-  end,
+  --  config = function()
+  --    require('user.plugins.lualine')
+  --  end,
 })
 
 use({
   'nvim-treesitter/nvim-treesitter',
+  commit = '4cccb6f494eb255b32a290d37c35ca12584c74d0',
   run = ':TSUpdate',
+  requires = {
+    'nvim-treesitter/playground',
+    'nvim-treesitter/nvim-treesitter-textobjects',
+    'JoosepAlviste/nvim-ts-context-commentstring'
+  }
 })
 
+use('nvim-lua/plenary.nvim')
 
 use({
   'nvim-telescope/telescope.nvim',
   requires = {
-    { 'nvim-lua/plenary.nvim' },
-    { 'kyazdani42/nvim-web-devicons' },
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
     { 'nvim-telescope/telescope-live-grep-args.nvim' },
   },
