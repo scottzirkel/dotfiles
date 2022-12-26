@@ -42,6 +42,7 @@ export N_PREFIX=$HOME/.n
 typeset -U path cdpath fpath
 path=(
     $HOME/.local/bin
+    $HOME/.dotfiles/bin
     $HOME/.config/composer/vendor/bin
     $HOME/.n/bin
     $HOME/.n/bin/node/bin

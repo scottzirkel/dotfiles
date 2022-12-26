@@ -47,4 +47,5 @@ Thumbs.db
 .cache
 .dropbox
 nvim/pack
+nvim/**/packer_compiled.lua
 .idea
