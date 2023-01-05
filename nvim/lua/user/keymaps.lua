@@ -13,11 +13,13 @@ keymap.set('v', 'y', 'mm`y')
 
 keymap.set('v', 'p', '"_dP')
 
+keymap.set('n', ';;', 'A;<Esc>')
+keymap.set('n', ',,', 'A,<Esc>')
 keymap.set('i', ';;', '<Esc>A;')
 keymap.set('i', ',,', '<Esc>A,')
 
 keymap.set('n', '<leader><Esc>', ':nohlsearch<CR>')
---keymap.set('n', '<leader>Q', ':bufo bdelete<CR>')
+keymap.set('n', '<leader>Q', ':bufdo bdelete<CR>')
 
 keymap.set('n', 'q:', ':q<CR>')
 

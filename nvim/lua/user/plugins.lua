@@ -1,80 +1,124 @@
--- Install packer
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({ 'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path })
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
+local fn = vim.fn
+local install_path = fn.stdpath('data') .. '/site/pack/packer/start/packer.nvim'
+local is_bootstrap = false
+if fn.empty(fn.glob(install_path)) > 0 then
+  is_bootstrap = true
+  fn.execute('!git clone https://github.com/wbthomason/packer.nvim' .. install_path)
+  vim.cmd [[packadd packer.nvim]]
 end
 
-local packer_boostrap = ensure_packer()
+local status, packer = pcall(require, "packer")
+if (not status) then return end
 
--- Initialize packer
-require('packer').init({
-  compile_path = vim.fn.stdpath('data') .. '/site/plugin/packer_compiled.lua',
+packer.reset()
+packer.init({
+  compile_path = fn.stdpath('data') .. '/site/plugin/packer_compiled.lua',
   display = {
     open_fn = function()
       return require('packer.util').float({ border = 'solid' })
     end,
-  },
+  }
 })
 
+local use = packer.use
 -- Install plugins
-local use = require('packer').use
+use 'wbthomason/packer.nvim' -- to self manage
 
-use('wbthomason/packer.nvim') -- to self manage
-use('tpope/vim-sleuth') -- Indent autodetection with editorconfig support
+-- Commenting support
+use 'tpope/vim-commentary'
 
---use('projekt0n/github-nvim-theme')
+-- Add, change, and delete surrounding text
+use 'tpope/vim-surround'
 
--- use('navarasu/onedark.nvim')
+-- Useful commands like :Rename and :SudoWrite
+use 'tpope/vim-eunuch'
 
-use('shaunsingh/nord.nvim')
+-- Pairs of handy bracket mappings, like [b and ]b
+use 'tpope/vim-unimpaired'
 
---use({
---  'jessarcher/onedark.nvim',
---  config = function()
---    vim.cmd('colorscheme onedark')
+-- Indent autodetection with editorconfig support
+use 'tpope/vim-sleuth'
 
--- Hide the characters in FloatBorder
---    vim.api.nvim_set_hl(0, 'FloatBorder', {
---      fg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
---      bg = vim.api.nvim_get_hl_by_name('NormalFloat', true).background,
---    })
+-- Allow plugins to enable repeating of commands
+use 'tpope/vim-repeat'
 
--- Make the StatusLineNonText background the same as StatusLine
---    vim.api.nvim_set_hl(0, 'StatusLineNonText', {
---      fg = vim.api.nvim_get_hl_by_name('NonText', true).foreground,
---      bg = vim.api.nvim_get_hl_by_name('StatusLine', true).background,
---    })
+-- Add more languages
+use 'sheerun/vim-polyglot'
 
--- Hide the characters in CursorLineBg
---   vim.api.nvim_set_hl(0, 'CursorLineBg', {
---     fg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
---     bg = vim.api.nvim_get_hl_by_name('CursorLine', true).background,
---   })
+-- Navigate seamlessly between Vim windows and Tmux panes.
+use 'christoomey/vim-tmux-navigator'
 
---   vim.api.nvim_set_hl(0, 'NvimTreeIndentMarker', { fg = '#30323E' })
---   vim.api.nvim_set_hl(0, 'IndentBlanklineChar', { fg = '#2F313C' })
--- end,
---})
+-- Jump to the last location when opening a file
+use 'farmergreg/vim-lastplace'
 
-use('kyazdani42/nvim-web-devicons') -- File icons
+-- Enable * searching with visually selected text
+use 'nelstrom/vim-visual-star-search'
 
-use('glepnir/lspsaga.nvim') -- LSP UI
+-- Automatically create parent dirs when saving
+use 'jessarcher/vim-heritage'
 
---use({
---  'tpope/vim-fugitive',
---  requires = 'tpope/vim-rhubarb',
---  cmd = 'G',
---})
+-- Text objects for HTML attributes
+use {
+  'whatyouhide/vim-textobj-xmlattr',
+  requires = 'kana/vim-textobj-user'
+}
 
-use('L3MON4D3/LuaSnip')
+-- Automatically set the working directory to the project root
+use {
+  'airblade/vim-rooter',
+  setup = function ()
+    vim.g.rooter_manual_only = 1
+  end,
+  config = function ()
+    vim.cmd('Rooter')
+  end
+}
 
-use({
+-- Automatically add closing brackets, quotes, etc
+use 'windwp/nvim-autopairs'
+
+-- Add smooth scrolling to avoid jarring jumps
+use {
+  'karb94/neoscroll.nvim',
+  config = function ()
+    require('neoscroll').setup()
+  end
+}
+
+-- Allow closing buffers without closing the split window
+use {
+  'famiu/bufdelete.nvim',
+  config = function ()
+    vim.keymap.set('n', '<Leader>q',':Bdelete<CR>')
+  end
+}
+
+-- Split array and methods onto multiple lines, or join them back up
+use {
+  'AndrewRadev/splitjoin.vim',
+  config = function ()
+    vim.g.splitjoin_html_attributes_bracket_on_new_line = 1
+    vim.g.splitjoin_trailing_comma = 1
+    vim.g.splitjoin_php_method_chain_full = 1
+  end
+}
+
+use {
+  'sickill/vim-pasta',
+  config = function ()
+    vim.g.pasta_disabled_filetypes = { 'fugitive' }
+  end
+}
+
+use 'shaunsingh/nord.nvim'
+
+use 'kyazdani42/nvim-web-devicons' -- File icons
+
+use 'glepnir/lspsaga.nvim' -- LSP UI
+
+use 'L3MON4D3/LuaSnip'
+
+use {
   'hrsh7th/nvim-cmp',
   requires = {
     'hrsh7th/cmp-buffer',
@@ -86,41 +130,31 @@ use({
     'onsails/lspkind-nvim',
     'saadparwaiz1/cmp_luasnip',
   },
-  -- config = function()
-  --   require('user.plugins.cmp')
-  --  end,
-})
+}
 
-use('williamboman/mason.nvim')
-use('williamboman/mason-lspconfig.nvim')
+use 'williamboman/mason.nvim'
+use 'williamboman/mason-lspconfig.nvim'
 
-use({
+use {
   'neovim/nvim-lspconfig',
   requires = {
     'b0o/schemastore.nvim',
     'folke/lsp-colors.nvim',
   }
-}) -- LSP
+} -- LSP
 
-use('windwp/nvim-autopairs')
+use 'windwp/nvim-ts-autotag'
 
-use('windwp/nvim-ts-autotag')
+use 'akinsho/bufferline.nvim'
+use 'norcalli/nvim-colorizer.lua'
 
-use('akinsho/bufferline.nvim')
-use('norcalli/nvim-colorizer.lua')
+use 'lewis6991/gitsigns.nvim'
 
-use('lewis6991/gitsigns.nvim')
+use 'dinhhuy258/git.nvim' -- For git blame & browse
 
-use('dinhhuy258/git.nvim') -- For git blame & browse
+use 'nvim-lualine/lualine.nvim'
 
-use({
-  'nvim-lualine/lualine.nvim',
-  --  config = function()
-  --    require('user.plugins.lualine')
-  --  end,
-})
-
-use({
+use {
   'nvim-treesitter/nvim-treesitter',
   --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0',
   run = ':TSUpdate',
@@ -129,50 +163,73 @@ use({
     'nvim-treesitter/nvim-treesitter-textobjects',
     'JoosepAlviste/nvim-ts-context-commentstring'
   }
-})
+}
 
-use('nvim-lua/plenary.nvim')
 
-use({
-  'nvim-telescope/telescope.nvim',
-  requires = {
-    { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
-    { 'nvim-telescope/telescope-live-grep-args.nvim' },
-  },
-  config = function()
-    require('user.plugins.telescope')
-  end
-})
+use 'nvim-lua/plenary.nvim'
+
+use {
+'nvim-telescope/telescope.nvim',
+requires = {
+  { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
+  { 'nvim-telescope/telescope-live-grep-args.nvim' },
+},
+config = function()
+  require('user.plugins.telescope')
+end
+}
 --use('nvim-telescope/telescope-file-browser.nvim')
 
-use({
+use {
   'nvim-tree/nvim-tree.lua',
   requires = {
     'nvim-tree/nvim-web-devicons'
   },
   tag = 'nightly'
-})
+}
 
-use('jose-elias-alvarez/null-ls.nvim')
-use('MunifTanjim/prettier.nvim')
+use 'jose-elias-alvarez/null-ls.nvim'
+use 'MunifTanjim/prettier.nvim'
 
-use({
+use {
   'phpactor/phpactor',
   branch = 'master',
   ft = 'php',
   run = 'composer install --no-dev -o',
-})
+}
 
 --use('glepnir/dashboard-nvim')
 
 -- Automatically bootstrap plugins
-if packer_bootstrap then
-  require('packer').sync()
+if is_bootstrap then
+  packer.sync()
 end
 
+
+
+-- When we are bootstrapping a configuration, it doesn't
+-- make sense to execute the rest of the init.lua.
+--
+-- You'll need to restart nvim, and then it will work.
+if is_bootstrap then
+  print '=================================='
+  print '    Plugins are being installed'
+  print '    Wait until Packer completes,'
+  print '       then restart nvim'
+  print '=================================='
+  return
+end
+
+-- Automatically source and re-compile packer whenever you save this init.lua
 vim.cmd([[
   augroup packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile>
   augroup end
 ]])
+-- local packer_group = vim.api.nvim_create_augroup('Packer', { clear = true })
+-- vim.api.nvim_create_autocmd('BufWritePost', {
+--   command = 'source <afile> | PackerCompile',
+--   group = packer_group,
+--   pattern = vim.fn.expand '$MYVIMRC',
+-- })

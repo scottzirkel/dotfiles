@@ -48,6 +48,7 @@ path=(
     $HOME/.n/bin/node/bin
     $HOME/.n/bin/npm/bin
     $HOME/.npm-packages/bin
+    $HOME/.cargo/bin
     ./vendor/bin
     $path
 )
