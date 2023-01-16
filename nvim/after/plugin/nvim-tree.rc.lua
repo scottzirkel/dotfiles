@@ -27,10 +27,10 @@ nvim_tree.setup({
 })
 
 vim.cmd([[
-  highlight NvimTreeIndentMarker guifg=#30323E
+  highlight NvimTreeIndentMarker guifg=#575967
   augroup NvimTreeHighlights
-    autocmd ColorScheme * highlight NvimTreeIndentMarker guifg=#30323E
+    autocmd ColorScheme * highlight NvimTreeIndentMarker guifg=#575967
   augroup end
 ]])
 
-vim.keymap.set('n', '<leader>n', ':NvimTreeFindFileToggle<CR>')
+vim.keymap.set('n', '<Leader>n', ':NvimTreeFindFileToggle<CR>')

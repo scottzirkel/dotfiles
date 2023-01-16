@@ -3,6 +3,7 @@ local keymap = vim.keymap
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- When text is wrapped, move by terminal rows, not lines, unless a count is provided
 keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true })
 keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true })
 

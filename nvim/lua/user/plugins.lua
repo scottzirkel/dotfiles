@@ -103,6 +103,7 @@ use {
   end
 }
 
+-- Pasting with indentation adjusted
 use {
   'sickill/vim-pasta',
   config = function ()
@@ -110,12 +111,12 @@ use {
   end
 }
 
+-- Theme
 use 'shaunsingh/nord.nvim'
 
 use 'kyazdani42/nvim-web-devicons' -- File icons
 
-use 'glepnir/lspsaga.nvim' -- LSP UI
-
+-- Snippet engine
 use 'L3MON4D3/LuaSnip'
 
 use {
@@ -143,20 +144,40 @@ use {
   }
 } -- LSP
 
+-- Autoclose & autorename tags
 use 'windwp/nvim-ts-autotag'
 
-use 'akinsho/bufferline.nvim'
-use 'norcalli/nvim-colorizer.lua'
+use {
+  'akinsho/bufferline.nvim',
+  requires = 'kyazdani42/nvim-web-devicons',
+  after = 'nord.nvim'
+}
 
+-- Display indentation lines
+use 'lukas-reineke/indent-blankline.nvim'
+
+-- Dashboard
+use('glepnir/dashboard-nvim')
+use {
+  'MaximilianLloyd/ascii.nvim',
+  requires = 'MunifTanjim/nui.nvim'
+}
+
+use 'norcalli/nvim-colorizer.lua' -- Preview colors in hex ie: #fedc56
+
+-- Gitblame and stuff
 use 'lewis6991/gitsigns.nvim'
-
 use 'dinhhuy258/git.nvim' -- For git blame & browse
 
-use 'nvim-lualine/lualine.nvim'
+use {
+  'nvim-lualine/lualine.nvim',
+  requires = { "kyazdani42/nvim-web-devicons", opt = true},
+  after = "nord.nvim"
+}
 
 use {
   'nvim-treesitter/nvim-treesitter',
-  --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0',
+  --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0'
   run = ':TSUpdate',
   requires = {
     'nvim-treesitter/playground',
@@ -165,6 +186,21 @@ use {
   }
 }
 
+use 'ixru/nvim-markdown'
+
+use {
+  'folke/zen-mode.nvim',
+  config = function ()
+    require('zen-mode').setup {}
+  end
+}
+
+use {
+  'folke/twilight.nvim',
+  config = function()
+    require('twilight').setup {}
+  end
+}
 
 use 'nvim-lua/plenary.nvim'
 
@@ -198,7 +234,13 @@ use {
   run = 'composer install --no-dev -o',
 }
 
---use('glepnir/dashboard-nvim')
+use {
+  'andrewferrier/wrapping.nvim',
+  config = function ()
+    require('wrapping').setup()
+  end
+}
+
 
 -- Automatically bootstrap plugins
 if is_bootstrap then
