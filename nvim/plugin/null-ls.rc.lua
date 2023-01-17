@@ -16,23 +16,22 @@ null_ls.setup {
   sources = {
     null_ls.builtins.formatting.prettierd,
     null_ls.builtins.diagnostics.eslint_d.with({
-      diagnostics_format = '[eslint] #{m}\n(#{c})'
+      diagnostics_format = '[eslint] #{m}\n(#{c})',
+       condition = function(utils)
+         return utils.root_has_file({ '.eslintrc.js ' })
+       end,
     }),
-    --null_ls.builtins.diagnostics.fish
     null_ls.builtins.code_actions.gitsigns,
     null_ls.builtins.code_actions.proselint,
-    --null_ls.builtins.diagnostics.eslint_d.with({
-    --  condition = function(utils)
-    --    return utils.root_has_file({ '.eslintrc.js ' })
-    --  end,
-    --}),
+
     null_ls.builtins.diagnostics.actionlint,
     null_ls.builtins.diagnostics.proselint,
     null_ls.builtins.diagnostics.gitlint,
-    --    null_ls.builtins.diagnostics.luacheck.with({
-    --      extra_args = { '--config', vim.fn.stdpath('config') .. './luacheckrc' },
-    --    }),
-    -- null_ls.builtins.diagnostics.phpstan
+       null_ls.builtins.diagnostics.luacheck.with({
+         extra_args = { '--config', vim.fn.stdpath('config') .. './luacheckrc' },
+       }),
+    -- null_ls.builtins.diagnostics.phpstan,
+    null_ls.builtins.diagnostics.solhint,
     null_ls.builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
     null_ls.builtins.formatting.eslint_d.with({
       condition = function(utils)
@@ -43,7 +42,7 @@ null_ls.setup {
     -- null_ls.builtins.formatting.phpcsfixer,
     null_ls.builtins.formatting.jq,
     --    null_ls.builtins.formatting.rustywind,
-    --    null_ls.builtins.formatting.stylua
+       null_ls.builtins.formatting.stylua
   },
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then

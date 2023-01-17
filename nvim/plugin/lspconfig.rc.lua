@@ -85,13 +85,14 @@ local on_attach = function(_, bufnr)
   --     callback = function() vim.lsp.buf.formatting_seq_sync() end
   --   })
   -- end
-  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+
+  vim.bo[bufnr].omnifunc = 'v:lua.vim.lsp.omnifunc'
 
   local bufopts = { noremap = true, silent = true, buffer = bufnr }
   vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
   vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
   vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
-  vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
+  vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>', bufopts)
 end
 
 protocol.CompletionItemKind = {
@@ -162,6 +163,9 @@ nvim_lsp.sumneko_lua.setup {
   cmd = { '/opt/homebrew/bin/lua-language-server' },
   settings = {
     Lua = {
+      runtime = {
+        version = 'LuaJIT'
+      },
       diagnostics = {
         -- Get the language server to recognize the 'vim' global
         globals = { 'vim' }
@@ -170,7 +174,8 @@ nvim_lsp.sumneko_lua.setup {
         -- Make the server aware of Neovim runtime
         libary = vim.api.nvim_get_runtime_file("", true),
         checkThirdParty = false
-      }
+      },
+      telemetry = { enable = false }
     }
   }
 }

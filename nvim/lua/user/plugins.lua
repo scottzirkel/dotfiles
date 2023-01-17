@@ -167,7 +167,7 @@ use 'norcalli/nvim-colorizer.lua' -- Preview colors in hex ie: #fedc56
 
 -- Gitblame and stuff
 use 'lewis6991/gitsigns.nvim'
-use 'dinhhuy258/git.nvim' -- For git blame & browse
+-- use 'dinhhuy258/git.nvim' -- For git blame & browse
 
 use {
   'nvim-lualine/lualine.nvim',
@@ -246,8 +246,6 @@ use {
 if is_bootstrap then
   packer.sync()
 end
-
-
 
 -- When we are bootstrapping a configuration, it doesn't
 -- make sense to execute the rest of the init.lua.
