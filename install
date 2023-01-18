@@ -25,6 +25,10 @@ ln -s $DOTFILES/git/.gitignore_global $HOME/.gitignore_global
 rm -rf $HOME/.config/kitty
 ln -s $DOTFILES/kitty $HOME/.config/kitty
 
+[[ -d $HOME/.tmux/plugins ]] && rm -rf $HOME/.tmux/plugins
+[[ ! -d $HOME/.tmux ]] && mkdir $HOME/.tmux
+ln -s $DOTFILES/tmux/plugins $HOME/.tmux/plugins
+
 rm -rf $HOME/.tmux.conf
 ln -s $DOTFILES/tmux/tmux.conf $HOME/.tmux.conf
 
