@@ -39,6 +39,7 @@ ts.setup {
     "css",
     "html",
     "vue",
+    "astro"
   },
   autotag = {
     enable = true

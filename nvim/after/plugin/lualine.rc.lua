@@ -73,9 +73,18 @@ lualine.setup {
     lualine_y = {
       { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = '', warn = '', info = '',
         hint = '' } },
-      'location'
+      {
+        'location',
+        icon = {
+          '',
+          align = 'left',
+          color = {
+            fg = colors.white
+          }
+        }
+      }
     },
-    lualine_z = { {'progress',  separator = { right = '' }, left_padding = 2} },
+    lualine_z = { {'progress', icon = { '', align = 'left', color = { fg = colors.black }},  separator = { right = '' }, left_padding = 2} },
   },
   inactive_sections = {
     lualine_a = { 'filename' },

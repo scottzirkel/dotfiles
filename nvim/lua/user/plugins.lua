@@ -157,7 +157,10 @@ use {
 use 'lukas-reineke/indent-blankline.nvim'
 
 -- Dashboard
-use('glepnir/dashboard-nvim')
+use {
+  'glepnir/dashboard-nvim',
+  commit = '1aab263f4773106abecae06e684f762d20ef587e'
+}
 use {
   'MaximilianLloyd/ascii.nvim',
   requires = 'MunifTanjim/nui.nvim'
@@ -187,6 +190,8 @@ use {
 }
 
 use 'ixru/nvim-markdown'
+
+use 'wuelnerdotexe/vim-astro'
 
 use {
   'folke/zen-mode.nvim',

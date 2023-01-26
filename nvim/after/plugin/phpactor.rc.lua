@@ -6,8 +6,9 @@ phpactor.setup({})
 vim.cmd([[
   augroup PhpactorMappings
     au!
-    au FileType php nmap <buffer> <Leader>pm :PhpactorContextMenu<CR>
-    au FileType php nmap <buffer> <Leader>pn :PhpactorClassNew<CR>
-    au FileType php nmap <buffer> <leader>o :PhpactorNavigate<CR>
+    au FileType php nmap <buffer> <Leader>cm :PhpactorContextMenu<CR>
+    au FileType php nmap <buffer> <Leader>cn :PhpactorClassNew<CR>
+    au FileType php nmap <buffer> <Leader>o :PhpactorNavigate<CR>
+    au FileType php nmap <buffer> <Leader>rei :call :PhpactorClassInflect()<CR>
   augroup END
 ]])
