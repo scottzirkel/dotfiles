@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Library/Ruby/Gems/2.0.0/gems/i18n-0.6.9/lib/i18n'
-let g:netrw_dirhist_2='/private/etc'
-let g:netrw_dirhist_3='/Users/scott/Sites/sandbox/capistrano/config/deploy'
-let g:netrw_dirhist_4='/Users/scott/Development/sandbox/vim'
-let g:netrw_dirhist_5='/Users/scott/Development/sandbox'
-let g:netrw_dirhist_6='/Users/scott/Development/sandbox/vim'
