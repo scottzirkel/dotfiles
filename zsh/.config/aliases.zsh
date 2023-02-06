@@ -77,6 +77,8 @@ alias dev='npm run dev'
 alias watch='npm run watch'
 alias prod='npm run prod'
 
+alias pn='pnpm'
+
 alias sshconfig="vi ~/.ssh/config"
 
 alias optimizejpg="/Applications/ImageOptim.app/Contents/MacOS/ImageOptim *.jpg *.JPG"

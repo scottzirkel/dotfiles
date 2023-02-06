@@ -117,3 +117,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 fpath=($fpath "/Users/scott/.zfunctions")
 
 eval "$(starship init zsh)"
+
+# pnpm
+export PNPM_HOME="/Users/scott/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end

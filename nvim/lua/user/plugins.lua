@@ -135,14 +135,13 @@ use({
   },
 })
 
-use('williamboman/mason.nvim')
-use('williamboman/mason-lspconfig.nvim')
-
 use({
   'neovim/nvim-lspconfig',
   requires = {
     'b0o/schemastore.nvim',
     'folke/lsp-colors.nvim',
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
   },
 }) -- LSP
 
@@ -181,14 +180,26 @@ use({
 
 use({
   'nvim-treesitter/nvim-treesitter',
-  --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0'
-  run = ':TSUpdate',
+  run = function()
+    require('nvim-treesitter.install').update({ with_sync = true })
+  end,
   requires = {
-    'nvim-treesitter/playground',
     'nvim-treesitter/nvim-treesitter-textobjects',
     'JoosepAlviste/nvim-ts-context-commentstring',
+    'p00f/nvim-ts-rainbow',
   },
 })
+
+-- use({
+--   'nvim-treesitter/nvim-treesitter',
+--   --  commit = '3cccb6f494eb255b32a290d37c35ca12584c74d0'
+--   run = ':TSUpdate',
+--   requires = {
+--     'nvim-treesitter/playground',
+--     'nvim-treesitter/nvim-treesitter-textobjects',
+--     'JoosepAlviste/nvim-ts-context-commentstring',
+--   },
+-- })
 
 use('ixru/nvim-markdown')
 
@@ -230,7 +241,7 @@ use({
   tag = 'nightly',
 })
 
-use('jose-elias-alvarez/null-ls.nvim')
+-- use('jose-elias-alvarez/null-ls.nvim')
 use('MunifTanjim/prettier.nvim')
 
 use({
@@ -265,6 +276,15 @@ use({
     ]])
   end,
 })
+
+use({
+  'iamcco/markdown-preview.nvim',
+  run = function()
+    vim.fn['mkdp#util#install']()
+  end,
+})
+
+use('vim-test/vim-test')
 
 -- Automatically bootstrap plugins
 if is_bootstrap then
