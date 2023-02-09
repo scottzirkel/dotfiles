@@ -7,21 +7,60 @@ if (not masonLSPStatus) then return end
 local lspStatus, lspconfig = pcall(require, "lspconfig")
 if (not lspStatus) then return end
 
+local nullStatus, nullls = pcall(require, "null-ls")
+if (not nullStatus) then return end
+
+
 -- Setup Mason to automatically install LSP servers
 mason.setup()
 masonLSP.setup({automatic_installation = true})
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
+
 -- PHP
-lspconfig.intelephense.setup({})
+lspconfig.intelephense.setup({
+    capabilities = capabilities
+  })
 
 -- Vue, JavaScript, TypeScript
 lspconfig.volar.setup({
   -- enable takeover mode for all JS/TS LSP services
-  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
+  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' },
+  capabilities = capabilities
 })
 
 -- Tailwind
-lspconfig.tailwindcss.setup({})
+lspconfig.tailwindcss.setup({capabilities = capabilities})
+
+lspconfig.jsonls.setup({
+    capabilities = capabilities,
+    settings = {
+      json = {
+        schemas = require('schemastore').json.schemas()
+      }
+    }
+  })
+
+nullls.setup({
+  sources = {
+    nullls.builtins.diagnostics.eslint_d.with({
+      condition = function(utils)
+        return utils.root_has_file({ '.eslintrc.js '})
+      end,
+    }),
+    nullls.builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
+    nullls.builtins.formatting.eslint_d.with({
+      condition = function(utils)
+        return utils.root_has_file({ '.eslintrc.js '})
+      end
+    }),
+    nullls.builtins.formatting.prettierd
+  }
+})
+
+lspconfig.prosemd_lsp.setup({})
+
+require('mason-null-ls').setup({ automatic_installation = true })
 
 -- Keymaps
 vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
@@ -32,6 +71,11 @@ vim.keymap.set('n', 'gi', ':Telescope lsp_implementations<CR>')
 vim.keymap.set('n', 'gr', ':Telescope lsp_references<CR>')
 vim.keymap.set('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>')
 vim.keymap.set('n', '<Leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>')
+
+-- Commands
+vim.api.nvim_create_user_command('Format', function ()
+  vim.lsp.buf.format({ async = true })
+end, {})
 
 -- Diagnostic configuration
 vim.diagnostic.config({

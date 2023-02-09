@@ -118,32 +118,34 @@ use('shaunsingh/nord.nvim')
 
 use('kyazdani42/nvim-web-devicons') -- File icons
 
--- Snippet engine
-use('L3MON4D3/LuaSnip')
-
+-- Completion
 use({
   'hrsh7th/nvim-cmp',
   requires = {
-    'hrsh7th/cmp-buffer',
-    'hrsh7th/cmp-cmdline',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-nvim-lsp-signature-help',
     'hrsh7th/cmp-nvim-lua',
+    'hrsh7th/cmp-cmdline',
+    'hrsh7th/cmp-buffer',
     'jessarcher/cmp-path',
-    'onsails/lspkind-nvim',
+    'L3MON4D3/LuaSnip',
     'saadparwaiz1/cmp_luasnip',
+    'onsails/lspkind-nvim',
   },
 })
 
+-- Language Server Protocol
 use({
   'neovim/nvim-lspconfig',
   requires = {
-    'b0o/schemastore.nvim',
-    'folke/lsp-colors.nvim',
     'williamboman/mason.nvim',
     'williamboman/mason-lspconfig.nvim',
+    'b0o/schemastore.nvim',
+    'folke/lsp-colors.nvim',
+    'jose-elias-alvarez/null-ls.nvim',
+    'jayp0521/mason-null-ls.nvim'
   },
-}) -- LSP
+})
 
 -- Autoclose & autorename tags
 use('windwp/nvim-ts-autotag')
@@ -241,15 +243,14 @@ use({
   tag = 'nightly',
 })
 
--- use('jose-elias-alvarez/null-ls.nvim')
 use('MunifTanjim/prettier.nvim')
 
-use({
-  'phpactor/phpactor',
-  branch = 'master',
-  ft = 'php',
-  run = 'composer install --no-dev -o',
-})
+-- use({
+--   'phpactor/phpactor',
+--   branch = 'master',
+--   ft = 'php',
+--   run = 'composer install --no-dev -o',
+-- })
 
 use({
   'andrewferrier/wrapping.nvim',
