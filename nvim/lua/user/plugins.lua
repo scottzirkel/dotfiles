@@ -114,7 +114,14 @@ use({
 })
 
 -- Theme
-use('shaunsingh/nord.nvim')
+-- use('shaunsingh/nord.nvim')
+use({
+  "rebelot/kanagawa.nvim",
+  -- require('kanagawa').setup({}),
+  -- run = function()
+    -- vim.cmd("colorscheme kanagawa")
+
+})
 
 use('kyazdani42/nvim-web-devicons') -- File icons
 
@@ -153,7 +160,8 @@ use('windwp/nvim-ts-autotag')
 use({
   'akinsho/bufferline.nvim',
   requires = 'kyazdani42/nvim-web-devicons',
-  after = 'nord.nvim',
+  -- after = 'nord.nvim',
+  after = 'kanagawa.nvim'
 })
 
 -- Display indentation lines
@@ -177,7 +185,7 @@ use('lewis6991/gitsigns.nvim')
 use({
   'nvim-lualine/lualine.nvim',
   requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-  after = 'nord.nvim',
+  -- after = 'nord.nvim',
 })
 
 use({
@@ -229,9 +237,9 @@ use({
     { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' },
     { 'nvim-telescope/telescope-live-grep-args.nvim' },
   },
-  config = function()
-    require('user.plugins.telescope')
-  end,
+  -- config = function()
+  --   require('user.plugins.telescope')
+  -- end,
 })
 --use('nvim-telescope/telescope-file-browser.nvim')
 
@@ -245,12 +253,15 @@ use({
 
 use('MunifTanjim/prettier.nvim')
 
--- use({
---   'phpactor/phpactor',
---   branch = 'master',
---   ft = 'php',
---   run = 'composer install --no-dev -o',
--- })
+use({
+  'phpactor/phpactor',
+  ft = 'php',
+  run = 'composer install --no-dev -o',
+  config = function ()
+    vim.keymap.set('n', '<Leader>pm', ':PhpactorContextMenu<CR>')
+    vim.keymap.set('n', '<Leader>pn', ':PhpactorClassNew<CR>')
+  end
+})
 
 use({
   'andrewferrier/wrapping.nvim',

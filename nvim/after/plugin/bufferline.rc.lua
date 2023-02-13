@@ -1,10 +1,10 @@
 local status, bufferline = pcall(require, "bufferline")
 if (not status) then return end
 
-local highlights = require("nord").bufferline.highlights({
-  italic = true,
-  bold = true,
-})
+-- local highlights = require("nord").bufferline.highlights({
+--   italic = true,
+--   bold = true,
+-- })
 
 -- local highlights = require("onenord").bufferline.highlights({
 --   italic = true,
@@ -33,12 +33,17 @@ bufferline.setup({
     custom_areas = {
       left = function()
         return {
-          { text = '    ', fg = '#8fff6d' },
+          { text = '    ', fg = '#8fff6d', bg = '#1f1f28'},
         }
       end,
     },
   },
-  highlights = highlights
+  highlights = {
+    separator_selected = {
+      fg = '#1F1F28',
+      bg = '#1F1F28'
+    },
+  }
 })
 
 vim.keymap.set('n', '<Tab>', '<Cmd>BufferLineCycleNext<CR>', {})

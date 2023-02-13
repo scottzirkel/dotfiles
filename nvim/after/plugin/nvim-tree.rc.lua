@@ -26,10 +26,11 @@ nvim_tree.setup({
   }
 })
 
+-- nord - #575967
 vim.cmd([[
-  highlight NvimTreeIndentMarker guifg=#575967
+  highlight NvimTreeIndentMarker guifg=#363646
   augroup NvimTreeHighlights
-    autocmd ColorScheme * highlight NvimTreeIndentMarker guifg=#575967
+    autocmd ColorScheme * highlight NvimTreeIndentMarker guifg=#363646
   augroup end
 ]])
 

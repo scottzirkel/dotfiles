@@ -5,7 +5,8 @@ local colors = {
   red = '#b65e68',
   gray = '#434c5e',
   steel = '#92959b',
-  black = '#2e3440',
+  -- black = '#2e3440',
+  black = '#1F1F28',
   white = '#e5e9f0',
   blue = '#81a1c1',
   light_blue = '#82b7c7',
@@ -77,7 +78,7 @@ lualine.setup {
         'location',
         icon = {
           '',
-          align = 'left',
+          align = 'right',
           color = {
             fg = colors.white
           }
