@@ -115,13 +115,8 @@ use({
 
 -- Theme
 -- use('shaunsingh/nord.nvim')
-use({
-  "rebelot/kanagawa.nvim",
-  -- require('kanagawa').setup({}),
-  -- run = function()
-    -- vim.cmd("colorscheme kanagawa")
-
-})
+use("rebelot/kanagawa.nvim")
+-- use('catppuccin/nvim', as = "catppuccin") -- try this if you get tired of kanagawa https://github.com/catppuccin/nvim
 
 use('kyazdani42/nvim-web-devicons') -- File icons
 
