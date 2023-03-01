@@ -47,6 +47,7 @@ lualine.setup {
   sections = {
     lualine_a = { {'mode', separator = { left = '' }, right_padding = 2} },
     lualine_b = {
+
       -- {
       -- 'filename',
       -- file_status = true, -- displays file status (readonly status, modified status)
@@ -70,6 +71,11 @@ lualine.setup {
       'encoding',
       'fileformat',
       '(vim.bo.expandtab and "␠ " or "⇥ ") .. " " .. vim.bo.shiftwidth',
+      {
+        require("lazy.status").updates,
+        cond = require("lazy.status").has_updates,
+        color = { fg = "#ff9e64"}
+      },
     },
     lualine_y = {
       { 'diagnostics', sources = { "nvim_diagnostic" }, symbols = { error = '', warn = '', info = '',

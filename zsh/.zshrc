@@ -8,7 +8,7 @@ fi
 
 export ZSH=$HOME/.oh-my-zsh
 
-[[ -n $TMUX ]] && export TERM="xterm-256color"
+export TERM="xterm-256color"
 ZSH_THEME="robbyrussell"
 ZSH_CUSTOM=$HOME/.config/zsh
 HYPHEN_INSENSITIVE="true"

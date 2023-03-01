@@ -1,16 +1,6 @@
 local status, bufferline = pcall(require, "bufferline")
 if (not status) then return end
 
--- local highlights = require("nord").bufferline.highlights({
---   italic = true,
---   bold = true,
--- })
-
--- local highlights = require("onenord").bufferline.highlights({
---   italic = true,
---   bold = true
--- })
-
 bufferline.setup({
   options = {
     mode = 'tabs',
