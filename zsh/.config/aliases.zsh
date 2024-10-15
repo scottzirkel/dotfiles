@@ -9,19 +9,20 @@ alias wip='git add . && git commit -am "wip"'
 alias pushwip="wip && git push"
 
 # PHP
-alias artisan="php artisan"
-alias art="php artisan"
-alias a="php artisan"
-alias fresh="php artisan migrate:fresh --seed"
-alias refresh="php artisan migrate:refresh --seed"
+alias artisan="herd php artisan"
+alias art="herd php artisan"
+alias a="herd php artisan"
+alias fresh="herd php artisan migrate:fresh --seed"
+alias refresh="herd php artisan migrate:refresh --seed"
 alias stan="vendor/bin/phpstan analyse"
-alias tna="php artisan test && ./vendor/bin/phpstan analyse --xdebug"
-alias compdump="composer dump-autoload"
-alias tinker="artisan tinker"
-alias homestead="php vendor/bin/homestead"
+alias tna="herd php artisan test && ./vendor/bin/phpstan analyse --xdebug"
+alias compdump="herd composer dump-autoload"
+alias tinker="herd php artisan tinker"
+alias horizon="herd php artisan horizon"
+alias envoy='php vendor/bin/envoy'
 alias rocketeer="php rocketeer.phar"
 alias please="php please"
-alias composer='COMPOSER_MEMORY_LIMIT=-1 composer'
+alias composer='COMPOSER_MEMORY_LIMIT=-1 herd composer'
 alias cr='composer require'
 alias co='composer outdated --direct'
 alias ci='composer install'
@@ -84,14 +85,10 @@ alias sshconfig="vi ~/.ssh/config"
 alias optimizejpg="/Applications/ImageOptim.app/Contents/MacOS/ImageOptim *.jpg *.JPG"
 alias optimize="find . -name '*.jpg' -print0 -or -name '*.JPG' -print0 -or -name '*.JPEG' -print0 -or -name '*.png' -print0 -or -name '*.gif' -print0 | xargs -0 -L 100 /Applications/ImageOptim.app/Contents/MacOS/ImageOptim"
 
+alias keka="/Applications/Keka.app/Contents/MacOS/Keka --cli"
+alias 7zip="keka --client 7z"
+
 # alias git=hub
 # alias vapor=vendor/bin/vapor
 
 alias pint='./vendor/bin/pint'
-
-alias sail='./vendor/bin/sail'
-alias sailor='sail art'
-
-alias switch80='valet use php80 && composer global update'
-alias switch81='valet use php81 && composer global update'
-alias switch74='valet use php74 && composer global update'

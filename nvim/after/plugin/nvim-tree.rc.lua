@@ -13,7 +13,7 @@ nvim_tree.setup({
     side = "right"
   },
   renderer = {
-    highlight_opened_files = '1',
+    highlight_opened_files = 'all',
     group_empty = true,
     icons = {
       show = {

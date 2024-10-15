@@ -3,6 +3,8 @@ if not status then
   return
 end
 
+-- vim.treesitter.language.register('php', 'blade')
+
 ts.setup({
   ensure_installed = 'all',
   highlight = {

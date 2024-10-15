@@ -128,6 +128,8 @@ require("lazy").setup({
     },
   },
 
+  -- 'mhartington/formatter.nvim',
+
   -- Language Server Protocol
   {
     'neovim/nvim-lspconfig',
@@ -152,7 +154,20 @@ require("lazy").setup({
   },
 
   -- Display indentation lines
+{
   'lukas-reineke/indent-blankline.nvim',
+  main = 'ibl',
+  opts = {
+    scope = {
+      show_start = false,
+    },
+    exclude = {
+      filetypes = {
+        'dashboard',
+      },
+    },
+  }
+},
 
   -- Dashboard
   {
@@ -181,7 +196,17 @@ require("lazy").setup({
     build = ':TSUpdate',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
-      'JoosepAlviste/nvim-ts-context-commentstring',
+--      {
+--      'JoosepAlviste/nvim-ts-context-commentstring',
+--      opts = {
+--        custom_calculation = function (node, language_tree)
+--          if vim.bo.filetype == 'blade' and language_tree._lang ~= 'javascript' then
+--            return '{{-- %s --}}'
+--          end
+--        end,
+--      },
+--    },
+      -- 'JoosepAlviste/nvim-ts-context-commentstring',
       'p00f/nvim-ts-rainbow',
       'windwp/nvim-ts-autotag',
     },

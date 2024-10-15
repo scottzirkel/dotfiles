@@ -1,0 +1,1 @@
+-- vim.cmd("autocmd BufNewFile,BufReadPost *.blade.php set filetype=blade")
