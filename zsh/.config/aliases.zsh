@@ -9,7 +9,7 @@ alias wip='git add . && git commit -am "wip"'
 alias pushwip="wip && git push"
 
 # PHP
-alias artisan="herd php artisan"
+# alias artisan="herd php artisan"
 alias art="herd php artisan"
 alias a="herd php artisan"
 alias fresh="herd php artisan migrate:fresh --seed"
@@ -17,11 +17,14 @@ alias refresh="herd php artisan migrate:refresh --seed"
 alias stan="vendor/bin/phpstan analyse"
 alias tna="herd php artisan test && ./vendor/bin/phpstan analyse --xdebug"
 alias compdump="herd composer dump-autoload"
-alias tinker="herd php artisan tinker"
-alias horizon="herd php artisan horizon"
+# alias tinker="herd php artisan tinker"
+# alias horizon="herd php artisan horizon"
 alias envoy='php vendor/bin/envoy'
 alias rocketeer="php rocketeer.phar"
 alias please="php please"
+alias clearphplog="rm -rf /opt/homebrew/var/log/php-fpm.log"
+
+# Composer
 alias composer='COMPOSER_MEMORY_LIMIT=-1 herd composer'
 alias cr='composer require'
 alias co='composer outdated --direct'
@@ -29,7 +32,10 @@ alias ci='composer install'
 alias ct='composer test'
 alias cl='composer lint'
 alias ca='composer analyse'
-alias clearphplog="rm -rf /opt/homebrew/var/log/php-fpm.log"
+
+# Sail
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias sa='sail artisan'
 
 # Stupid
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy";
