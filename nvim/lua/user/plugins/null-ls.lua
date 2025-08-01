@@ -7,11 +7,11 @@ require('null-ls').setup({
     }),
     require('null-ls').builtins.code_actions.gitsigns,
     require('null-ls').builtins.code_actions.proselint,
-    require('null-ls').builtins.diagnostics.eslint_d.with({
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js' })
-      end,
-    }),
+    -- require('null-ls').builtins.diagnostics.eslint_d.with({
+    --   condition = function(utils)
+    --     return utils.root_has_file({ '.eslintrc.js' })
+    --   end,
+    -- }),
     require('null-ls').builtins.diagnostics.proselint,
     require('null-ls').builtins.diagnostics.gitlint,
     require('null-ls').builtins.diagnostics.luacheck.with({
@@ -27,7 +27,7 @@ require('null-ls').setup({
     }),
     require('null-ls').builtins.formatting.prettierd,
     require('null-ls').builtins.formatting.phpcsfixer,
-    require('null-ls').builtins.formatting.jq,
+    -- require('null-ls').builtins.formatting.jq,
     require('null-ls').builtins.formatting.rustywind,
     require('null-ls').builtins.formatting.stylua,
   },

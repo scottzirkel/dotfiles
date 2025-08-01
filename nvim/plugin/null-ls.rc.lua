@@ -40,44 +40,15 @@ local lsp_formatting = function(bufnr)
   })
 end
 
+-- Minimal null-ls setup - most functionality moved to conform.nvim and nvim-lint
 null_ls.setup({
-  debug = true,
+  debug = false,
   sources = {
-    null_ls.builtins.formatting.prettierd,
-    null_ls.builtins.diagnostics.eslint_d.with({
-      diagnostics_format = '[eslint] #{m}\n(#{c})',
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js ' })
-      end,
-    }),
+    -- Code actions that don't have LSP equivalents
     null_ls.builtins.code_actions.gitsigns,
-    null_ls.builtins.code_actions.proselint,
-
-    null_ls.builtins.diagnostics.actionlint,
-    null_ls.builtins.diagnostics.proselint,
-    null_ls.builtins.diagnostics.gitlint,
-    null_ls.builtins.diagnostics.luacheck.with({
-      extra_args = { '--config', vim.fn.stdpath('config') .. './luacheckrc' },
-    }),
-    -- null_ls.builtins.diagnostics.phpstan,
-    null_ls.builtins.diagnostics.solhint,
+    
+    -- Specialized diagnostics not covered by nvim-lint
     null_ls.builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-    -- null_ls.builtins.formatting.eslint_d.with({
-    --   condition = function(utils)
-    --     return utils.root_has_file({ '.eslintrc.js' })
-    --   end,
-    -- }),
-
-    -- null_ls.builtins.formatting.blade_formatter,
-    null_ls.builtins.formatting.pint.with({
-      condition = function(utils)
-        return utils.root_has_file({ 'vendor/bin/pint' })
-      end,
-    }),
-    -- null_ls.builtins.formatting.phpcsfixer,
-    null_ls.builtins.formatting.jq,
-    --    null_ls.builtins.formatting.rustywind,
-    null_ls.builtins.formatting.stylua,
   },
   -- on_attach = function(client, bufnr)
   --   if client.supports_method('textDocument/formatting') then

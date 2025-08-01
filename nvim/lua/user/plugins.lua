@@ -128,7 +128,80 @@ require("lazy").setup({
     },
   },
 
-  -- 'mhartington/formatter.nvim',
+  -- Modern async formatting
+  {
+    'stevearc/conform.nvim',
+    event = { 'BufWritePre' },
+    cmd = { 'ConformInfo' },
+    keys = {
+      {
+        '<leader>f',
+        function()
+          require('conform').format({ async = true, lsp_fallback = true })
+        end,
+        mode = '',
+        desc = 'Format buffer',
+      },
+    },
+    opts = {
+      formatters_by_ft = {
+        lua = { 'stylua' },
+        python = { 'isort', 'black' },
+        javascript = { { 'prettierd', 'prettier' } },
+        typescript = { { 'prettierd', 'prettier' } },
+        javascriptreact = { { 'prettierd', 'prettier' } },
+        typescriptreact = { { 'prettierd', 'prettier' } },
+        vue = { { 'prettierd', 'prettier' } },
+        css = { { 'prettierd', 'prettier' } },
+        scss = { { 'prettierd', 'prettier' } },
+        html = { { 'prettierd', 'prettier' } },
+        json = { { 'prettierd', 'prettier' } },
+        yaml = { { 'prettierd', 'prettier' } },
+        markdown = { { 'prettierd', 'prettier' } },
+        php = { 'pint', 'php_cs_fixer' },
+      },
+      format_on_save = {
+        timeout_ms = 500,
+        lsp_fallback = true,
+      },
+    },
+  },
+
+  -- Modern async linting
+  {
+    'mfussenegger/nvim-lint',
+    event = { 'BufReadPre', 'BufNewFile' },
+    config = function()
+      local lint = require('lint')
+      
+      lint.linters_by_ft = {
+        javascript = { 'eslint_d' },
+        typescript = { 'eslint_d' },
+        javascriptreact = { 'eslint_d' },
+        typescriptreact = { 'eslint_d' },
+        vue = { 'eslint_d' },
+        python = { 'pylint' },
+        php = { 'phpstan' },
+        lua = { 'luacheck' },
+        markdown = { 'proselint' },
+        yaml = { 'yamllint' },
+        dockerfile = { 'hadolint' },
+      }
+      
+      local lint_augroup = vim.api.nvim_create_augroup('lint', { clear = true })
+      
+      vim.api.nvim_create_autocmd({ 'BufEnter', 'BufWritePost', 'InsertLeave' }, {
+        group = lint_augroup,
+        callback = function()
+          lint.try_lint()
+        end,
+      })
+      
+      vim.keymap.set('n', '<leader>l', function()
+        lint.try_lint()
+      end, { desc = 'Trigger linting for current file' })
+    end,
+  },
 
   -- Language Server Protocol
   {
@@ -138,8 +211,8 @@ require("lazy").setup({
       'williamboman/mason-lspconfig.nvim',
       'b0o/schemastore.nvim',
       'folke/lsp-colors.nvim',
-      'jose-elias-alvarez/null-ls.nvim',
-      'jayp0521/mason-null-ls.nvim'
+      'nvimtools/none-ls.nvim',
+      'nvimtools/none-ls-extras.nvim'
     },
   },
 
@@ -169,10 +242,39 @@ require("lazy").setup({
   }
 },
 
-  -- Dashboard
+  -- Dashboard (using original working version)
   {
     'glepnir/dashboard-nvim',
-    commit = '1aab263f4773106abecae06e684f762d20ef587e',
+    event = 'VimEnter',
+    config = function()
+      local db = require('dashboard')
+      db.custom_header = {
+        '',
+        '                                        ',
+        ' @@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@@  ',
+        '@@@@@@@   @@@@@@@@  @@@@@@@@  @@@@@@@@  ',
+        '!@@            @@!       @@!       @@!  ',
+        '!@!           !@!       !@!       !@!   ',
+        '!!@@!!       @!!       @!!       @!!    ',
+        ' !!@!!!     !!!       !!!       !!!     ',
+        '     !:!   !!:       !!:       !!:      ',
+        '    !:!   :!:       :!:       :!:       ',
+        ':::: ::    :: ::::   ::        ::       ',
+        ':: : :    : :: : :  : :       : :       ',
+        '                                    ',
+        '',
+      }
+      
+      db.custom_center = {
+        { icon = '  ', desc = 'New file                       ', action = 'enew' },
+        { icon = '  ', shortcut = 'SPC f', desc = 'Find file                 ', action = 'Telescope find_files' },
+        { icon = '  ', shortcut = 'SPC h', desc = 'Recent files              ', action = 'Telescope oldfiles' },
+        { icon = '  ', shortcut = 'SPC g', desc = 'Find Word                 ', action = 'Telescope live_grep' },
+      }
+      
+      db.custom_footer = { '' }
+    end,
+    dependencies = { 'nvim-tree/nvim-web-devicons' }
   },
 
   {
@@ -207,7 +309,7 @@ require("lazy").setup({
 --      },
 --    },
       -- 'JoosepAlviste/nvim-ts-context-commentstring',
-      'p00f/nvim-ts-rainbow',
+      'HiPhish/rainbow-delimiters.nvim',
       'windwp/nvim-ts-autotag',
     },
   },
@@ -296,13 +398,20 @@ require("lazy").setup({
   {
     'folke/trouble.nvim',
     dependencies = 'nvim-tree/nvim-web-devicons',
-    config = function()
-      require('trouble').setup({
-        -- your configuration comes here
-        -- or leave it empty to use the default settings
-        -- refer to the configuration section below
-      })
-    end,
+    opts = {}, -- for default options, refer to the configuration section for custom setup.
+    cmd = 'Trouble',
+    keys = {
+      {
+        '<leader>xx',
+        '<cmd>Trouble diagnostics toggle<cr>',
+        desc = 'Diagnostics (Trouble)',
+      },
+      {
+        '<leader>xX',
+        '<cmd>Trouble diagnostics toggle filter.buf=0<cr>',
+        desc = 'Buffer Diagnostics (Trouble)',
+      },
+    },
   },
 
   {

@@ -14,7 +14,7 @@ alias art="herd php artisan"
 alias a="herd php artisan"
 alias fresh="herd php artisan migrate:fresh --seed"
 alias refresh="herd php artisan migrate:refresh --seed"
-alias stan="vendor/bin/phpstan analyse"
+alias stan="./vendor/bin/phpstan analyse"
 alias tna="herd php artisan test && ./vendor/bin/phpstan analyse --xdebug"
 alias compdump="herd composer dump-autoload"
 # alias tinker="herd php artisan tinker"
@@ -23,6 +23,10 @@ alias envoy='php vendor/bin/envoy'
 alias rocketeer="php rocketeer.phar"
 alias please="php please"
 alias clearphplog="rm -rf /opt/homebrew/var/log/php-fpm.log"
+
+alias env-pull='npx dotenv-vault pull'
+alias env-push='npx dotenv-vault push'
+alias env-login='npx dotenv-vault login'
 
 # Composer
 alias composer='COMPOSER_MEMORY_LIMIT=-1 herd composer'
@@ -79,10 +83,10 @@ alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && kil
 # Flush Directory Service cache
 alias flushdns="sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder"
 
-#NPM
-alias dev='npm run dev'
-alias watch='npm run watch'
-alias prod='npm run prod'
+# Sail NPM
+alias snpm="sail npm"
+alias dev='snpm run dev'
+alias build='snpm run build'
 
 alias pn='pnpm'
 

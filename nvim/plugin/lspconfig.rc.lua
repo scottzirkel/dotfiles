@@ -47,6 +47,17 @@ lspconfig.volar.setup({
   capabilities = capabilities,
 })
 
+-- ESLint LSP for better integration
+lspconfig.eslint.setup({
+  capabilities = capabilities,
+  on_attach = function(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+})
+
 -- Tailwind
 lspconfig.tailwindcss.setup({ capabilities = capabilities })
 
@@ -61,24 +72,24 @@ lspconfig.jsonls.setup({
 
 nullls.setup({
   sources = {
-    nullls.builtins.diagnostics.eslint_d.with({
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js ' })
-      end,
-    }),
+    -- nullls.builtins.diagnostics.eslint_d.with({
+    --   condition = function(utils)
+    --     return utils.root_has_file({ '.eslintrc.js ' })
+    --   end,
+    -- }),
     nullls.builtins.diagnostics.trail_space.with({ disabled_filetypes = { 'NvimTree' } }),
-    nullls.builtins.formatting.eslint_d.with({
-      condition = function(utils)
-        return utils.root_has_file({ '.eslintrc.js ' })
-      end,
-    }),
+    -- nullls.builtins.formatting.eslint_d.with({
+    --   condition = function(utils)
+    --     return utils.root_has_file({ '.eslintrc.js ' })
+    --   end,
+    -- }),
     nullls.builtins.formatting.prettierd,
   },
 })
 
 lspconfig.prosemd_lsp.setup({})
 
-require('mason-null-ls').setup({ automatic_installation = true })
+-- require('mason-null-ls').setup({ automatic_installation = true }) -- Removed: mason-null-ls is archived
 
 -- Keymaps
 vim.keymap.set('n', '<Leader>d', '<cmd>lua vim.diagnostic.open_float()<CR>')
@@ -108,10 +119,12 @@ vim.diagnostic.config({
   float = {
     source = true,
   },
+  signs = {
+    text = {
+      [vim.diagnostic.severity.ERROR] = '',
+      [vim.diagnostic.severity.WARN] = '',
+      [vim.diagnostic.severity.INFO] = '',
+      [vim.diagnostic.severity.HINT] = '',
+    },
+  },
 })
-
--- Sign configuration
-vim.fn.sign_define('DiagnosticSignError', { text = '', texthl = 'DiagnosticSignError' })
-vim.fn.sign_define('DiagnosticSignWarn', { text = '', texthl = 'DiagnosticSignWarn' })
-vim.fn.sign_define('DiagnosticSignInfo', { text = '', texthl = 'DiagnosticSignInfo' })
-vim.fn.sign_define('DiagnosticSignHint', { text = '', texthl = 'DiagnosticSignHint' })
