@@ -8,6 +8,11 @@ alias nah='git reset --hard && git clean -df'
 alias wip='git add . && git commit -am "wip"'
 alias pushwip="wip && git push"
 
+# LAZYGIT
+alias lg="lazygit"
+alias lgs="lazygit status"
+alias lgd="lazygit --path=~/.dotfiles"
+
 # PHP
 # alias artisan="herd php artisan"
 alias art="herd php artisan"
