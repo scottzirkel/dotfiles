@@ -1,0 +1,221 @@
+gui:
+  # Show file icons in file tree
+  showFileTree: true
+  # Show icons next to files
+  showFileIcons: true
+  # Show random tips in the command log
+  showRandomTip: true
+  # Show command log
+  showCommandLog: true
+  # Show bottom line (which shows keybindings)
+  showBottomLine: true
+  # Show panel jumps (jump to panel with numbers)
+  showPanelJumps: true
+  # Theme
+  theme:
+    # Use nerd font icons
+    nerdFontsVersion: "3"
+    # Selected line color
+    selectedLineBgColor:
+      - reverse
+    # Selected range color  
+    selectedRangeBgColor:
+      - reverse
+    # Options text color
+    optionsTextColor:
+      - blue
+    # Cherry picked commit color
+    cherryPickedCommitBgColor:
+      - cyan
+    # Cherry picked commit text color
+    cherryPickedCommitFgColor:
+      - blue
+    # Untracked file color
+    unstagedChangesColor:
+      - red
+    # Default text color
+    defaultFgColor:
+      - default
+  # Mouse support
+  mouseEvents: true
+  # Skip unstage line warning
+  skipUnstageLineWarning: false
+  # Skip stash warning
+  skipStashWarning: false
+  # Side panel width as a ratio of total width
+  sidePanelWidth: 0.3333
+  # Main panel split mode ('flexible' | 'weighted')
+  mainPanelSplitMode: flexible
+  # Language (auto will use your system language)
+  language: auto
+  # Time format
+  timeFormat: "02 Jan 06"
+  # Short time format  
+  shortTimeFormat: "15:04"
+  # Border style ('single' | 'double' | 'rounded' | 'hidden')
+  border: rounded
+  # Show file tree
+  expandFocusedSidePanel: false
+  # Animate loading
+  animateExpansion: true
+
+git:
+  # Paging settings
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
+    useConfig: false
+  # Commit settings
+  commit:
+    # Sign commits
+    signOff: false
+    # Verbose commits (show diff in commit message editor)
+    verbose: true
+  # Merge tool
+  merging:
+    # Manual commit after merge
+    manualCommit: false
+    # Args for merge tool
+    args: ""
+  # Skip hooks for certain commands
+  skipHookPrefix: WIP
+  # Auto fetch
+  autoFetch: true
+  # Auto refresh
+  autoRefresh: true
+  # Fetch all branches
+  fetchAll: true
+  # Branch log order
+  branchLogCmd: "git log --graph --color=always --abbrev-commit --decorate --date=relative --pretty=medium {{branchName}} --"
+  # All branches log command  
+  allBranchesLogCmd: "git log --graph --all --color=always --abbrev-commit --decorate --date=relative --pretty=medium"
+  # Disable force push
+  disableForcePushing: false
+  # Parse emoji in commit messages
+  parseEmoji: false
+  # Diff context size
+  diffContextSize: 3
+  # External diff command
+  externalDiffCommand: ""
+
+# Refresher
+refresher:
+  # Refresh interval in seconds  
+  refreshInterval: 10
+  # Fetch interval in seconds
+  fetchInterval: 60
+
+# Update checking
+update:
+  # Update method ('prompt' | 'background' | 'never')
+  method: prompt
+  # Update interval in days
+  days: 14
+
+# Reporting
+reporting: undetermined
+
+# Splash screen
+splashUpdatesIndex: 0
+
+# Confirm on quit
+confirmOnQuit: false
+
+# Quit on top level return
+quitOnTopLevelReturn: false
+
+# Disable start in interactive mode
+disableStartupPopups: false
+
+# Custom commands
+customCommands:
+  - key: 'C'
+    command: 'git cz'
+    description: 'commit with commitizen'
+    context: 'files'
+    loadingText: 'opening commitizen commit tool'
+    subprocess: true
+  - key: '<c-r>'
+    command: 'git rebase -i {{.SelectedLocalCommit.Sha}}^'
+    context: 'localBranches'
+    description: 'interactive rebase from selected commit'
+  - key: 'E'
+    command: 'git rebase --edit-todo'
+    context: 'localBranches'
+    description: 'edit rebase todo'
+  - key: 'S'
+    command: 'git push --set-upstream origin {{.SelectedLocalBranch.Name}}'
+    context: 'localBranches'
+    description: 'push and set upstream'
+
+# Services (for GitHub, GitLab integration)
+services:
+  'github.com': 'github:{{owner}}/{{repo}}'
+  'gitlab.com': 'gitlab:{{owner}}/{{repo}}'
+
+# Key bindings (customize if needed)
+keybinding:
+  universal:
+    quit: 'q'
+    quit-alt1: '<c-c>'
+    return: '<esc>'
+    quitWithoutChangingDirectory: 'Q'
+    togglePanel: '<tab>'
+    prevItem: '<up>'
+    nextItem: '<down>'
+    prevItem-alt: 'k'
+    nextItem-alt: 'j'
+    prevPage: ','
+    nextPage: '.'
+    scrollLeft: 'H'
+    scrollRight: 'L'
+    gotoTop: '<'
+    gotoBottom: '>'
+    toggleRangeSelect: 'v'
+    rangeSelectDown: '<s-down>'
+    rangeSelectUp: '<s-up>'
+    prevBlock: '<left>'
+    nextBlock: '<right>'
+    prevBlock-alt: 'h'
+    nextBlock-alt: 'l'
+    nextMatch: 'n'
+    prevMatch: 'N'
+    startSearch: '/'
+    optionMenu: 'x'
+    optionMenu-alt1: '?'
+    select: '<space>'
+    goInto: '<enter>'
+    confirm: '<enter>'
+    confirm-alt1: 'y'
+    remove: 'd'
+    new: 'n'
+    edit: 'e'
+    openFile: 'o'
+    scrollUpMain: '<pgup>'
+    scrollDownMain: '<pgdown>'
+    scrollUpMain-alt1: 'K'
+    scrollDownMain-alt1: 'J'
+    scrollUpMain-alt2: '<c-u>'
+    scrollDownMain-alt2: '<c-d>'
+    executeCustomCommand: ':'
+    createRebaseOptionsMenu: 'm'
+    pushFiles: 'P'
+    pullFiles: 'p'
+    refresh: 'R'
+    createPatchOptionsMenu: '<c-p>'
+    nextTab: ']'
+    prevTab: '['
+    nextScreenMode: '+'
+    prevScreenMode: '_'
+    undo: 'z'
+    redo: '<c-z>'
+    filteringMenu: '<c-s>'
+    diffingMenu: 'W'
+    diffingMenu-alt: '<c-e>'
+    copyToClipboard: '<c-o>'
+    openRecentRepos: '<c-r>'
+    submitEditorText: '<enter>'
+    extrasMenu: '@'
+    toggleWhitespaceInDiffView: '<c-w>'
+    increaseContextInDiffView: '}'
+    decreaseContextInDiffView: '{'
