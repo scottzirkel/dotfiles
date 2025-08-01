@@ -49,3 +49,6 @@ Thumbs.db
 nvim/pack
 nvim/**/packer_compiled.lua
 .idea
+
+# GitHub CLI sensitive config
+gh/hosts.yml
