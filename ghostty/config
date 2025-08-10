@@ -7,14 +7,7 @@ adjust-cell-height = 30
 # Fix sending shift+enter for Claude Code
 keybind = shift+enter=text:\x1b\r
 
-theme = dark:catppuccin-frappe,light:cappuccin-latte
-# theme = Kanagawa Wave
-# Kanagawa theme colors to match Kitty
-# background = 1f1f28
-# foreground = cac8bb
-# selection-background = 2d4f67
-# selection-foreground = c8c093
-# cursor-color = c8c093
+theme = dark:catppuccin-mocha,light:cappuccin-latte
 
 shell-integration-features = no-cursor
 cursor-color = 00ff00
