@@ -52,3 +52,5 @@ nvim/**/packer_compiled.lua
 
 # GitHub CLI sensitive config
 gh/hosts.yml
+
+claude/projects/**

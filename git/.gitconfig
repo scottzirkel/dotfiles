@@ -21,6 +21,7 @@
 	defaultBranch = main
 [core]
 	pager = delta
+	gitproxy = 
 [diff]
 	colorMoved = default
 [interactive]
@@ -44,3 +45,15 @@
 	line-numbers-right-style = cyan
 	line-numbers-minus-style = 124
 	line-numbers-plus-style = 28
+[http]
+	postBuffer = 524288000
+	version = HTTP/2
+	sslVerify = true
+	sslBackend = openssl
+	timeout = 300
+	followRedirects = true
+	userAgent = git/2.0
+[url "https://github.com/"]
+	insteadOf = git://github.com/
+[http "https://github.com"]
+	proxy = 

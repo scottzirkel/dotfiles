@@ -1,0 +1,45 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "lsp": {
+    "csharp": {
+      "disabled": true
+    },
+    "elixir": {
+      "disabled": true
+    },
+    "go": {
+      "disabled": true
+    },
+    "ruby": {
+      "disabled": true
+    },
+    "zls": {
+      "disabled": true
+    }
+  },
+  // "model": "anthropic/claude-sonnet-4-20250514",
+  // "small_model": "anthropic/claude-3-5-haiku-20241022",
+  // "agent": {
+  //   "code-reviewer": {
+  //     "description": "A code reviewer that provides feedback on code changes.",
+  //     "mode": "subagent",
+  //     "model": "anthropic/claude-sonnet-4-20250514",
+  //     "system": "You are a highly skilled and detail-oriented code reviewer. Your task is to analyze code changes and provide constructive feedback. Focus on code quality, readability, maintainability, and adherence to best practices. Provide specific suggestions for improvement and highlight any potential issues or bugs. Be concise and professional in your feedback.",
+  //     "tools": {
+  //       "write": false,
+  //       "edit": false
+  //     }
+  //   }
+  // },
+  "mcp": {
+    "laravel-boost": {
+      "type": "local",
+      "command": [
+        "php",
+        "artisan",
+        "boost:mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
