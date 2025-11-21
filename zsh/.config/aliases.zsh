@@ -53,6 +53,9 @@ alias fight="echo '(ง'̀-'́)ง' | pbcopy";
 # MISC
 alias publicip='dig +short myip.opendns.com @resolver1.opendns.com'
 
+# Get wordcount for doc
+alias wcr='find . -type f -exec wc -w {} + | tail -n1'
+
 alias vimrc="vim ~/.vimrc"
 alias zshrc="vim ~/.zshrc"
 
